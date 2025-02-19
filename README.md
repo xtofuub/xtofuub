@@ -1,5 +1,5 @@
 # 💫 About Me:
-👋 Hi, I’m Edwin!<br>💻 I like building cool stuff.<br>🌱 Currently learning Python, HTML, CSS, LINUX<br>🚀 Always exploring new technologies and improving my skills.<br>📫 Reach me: 112.<br>✨ Fun fact: Meow Tuah!.
+👋 Hi, I’m Edwin!<br>💻 I like building cool stuff.<br>🌱 Currently learning PHP,Python, HTML, CSS, LINUX<br>🚀 Always exploring new technologies and improving my skills.<br>📫 Reach me: 112.<br>✨ Fun fact: Meow Tuah!.
 
 
 # 💻 Tech Stack:
