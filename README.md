@@ -22,7 +22,7 @@
 <div align="center">
 
 
-  <img src="https://nirzak-streak-stats.vercel.app/?user=tofuub&theme=dark&hide_border=false" /><br/>
+  <img src="https://nirzak-streak-stats.vercel.app/?user=xtofuub&theme=dark&hide_border=false" /><br/>
 </div>
 
 
