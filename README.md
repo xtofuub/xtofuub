@@ -2,10 +2,11 @@
 
 ---
 
-
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=800&color=CC0000&center=true&vCenter=true&width=600&lines=Operate+in+the+shadows.;Build+what+others+won't.;Break+things+to+understand+them.;%5B+Security+%7C+Dev+%7C+Reverse+Engineering+%5D)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=800&color=CC0000&center=true&vCenter=true&width=600&lines=Operate+in+the+shadows.;Build+what+others+won't.;Break+things+to+understand+them.;%5B+Security+%7C+Full+Stack+%7C+Reverse+Engineering+%5D)](https://git.io/typing-svg)
+
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-xtofuub.github.io-CC0000?style=for-the-badge&logoColor=white)](https://xtofuub.github.io/)
 
 </div>
 
@@ -13,15 +14,24 @@
 
 ## `whoami`
 
-Hey, I'm **Edwin** - a Computer Engineering student who likes building things, breaking things, and understanding how stuff works under the hood.
+```console
+┌──(edwin㉿kali)-[~]
+└─$ whoami
 
-- 🔴 **Security research** - pentesting, red team concepts, adversary simulation
-- 🧠 **Reverse engineering** - malware analysis, decoding the unknown
-- 🛠️ **Building tools** - if something doesn't exist and I need it, I build it
-- 🌐 **Web dev** - full-stack stuff, PHP, JS, databases, deployments
-- 🎓 **Computer Engineering** - currently surviving academia
+  name      →  Edwin
+  role      →  Cybersecurity Specialist Jr
+  focus     →  Security  /  Full Stack Dev  /  Reverse Engineering
 
-> *go BIG or go home.*
+  security  →  pentesting, red team concepts, adversary simulation
+  rev_eng   →  malware analysis, protocol dissection, decoding the unknown
+  building  →  if something doesn't exist and I need it, I build it
+  stack     →  TypeScript, Next.js, PHP, Flask, Python, MySQL
+  tools     →  Kali, Burp Suite, Metasploit, Wireshark, VirtualBox
+  vibe      →  "learn by breaking, build by doing"
+
+┌──(edwin㉿kali)-[~]
+└─$ █
+```
 
 ---
 
@@ -40,7 +50,7 @@ class Edwin:
         ]
         self.currently_building = [
             "Security tools",
-            "Web projects",
+            "Full stack web apps",
             "Random stuff that seems useful"
         ]
         self.vibe = "learn by breaking, build by doing"
@@ -53,11 +63,20 @@ class Edwin:
 **Languages**
 
 ![Python](https://img.shields.io/badge/Python-1a1a1a?style=for-the-badge&logo=python&logoColor=ffdd54)
-![PowerShell](https://img.shields.io/badge/PowerShell-1a1a1a?style=for-the-badge&logo=powershell&logoColor=5391FE)
+![TypeScript](https://img.shields.io/badge/TypeScript-1a1a1a?style=for-the-badge&logo=typescript&logoColor=3178C6)
 ![JavaScript](https://img.shields.io/badge/JavaScript-1a1a1a?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![PowerShell](https://img.shields.io/badge/PowerShell-1a1a1a?style=for-the-badge&logo=powershell&logoColor=5391FE)
 ![PHP](https://img.shields.io/badge/PHP-1a1a1a?style=for-the-badge&logo=php&logoColor=777BB4)
 ![HTML5](https://img.shields.io/badge/HTML5-1a1a1a?style=for-the-badge&logo=html5&logoColor=E34F26)
 ![CSS3](https://img.shields.io/badge/CSS3-1a1a1a?style=for-the-badge&logo=css3&logoColor=1572B6)
+![Bash](https://img.shields.io/badge/Bash-1a1a1a?style=for-the-badge&logo=gnubash&logoColor=4EAA25)
+
+**Frameworks & Libraries**
+
+![Next.js](https://img.shields.io/badge/Next.js-1a1a1a?style=for-the-badge&logo=nextdotjs&logoColor=ffffff)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-1a1a1a?style=for-the-badge&logo=tailwindcss&logoColor=38B2AC)
+![Flask](https://img.shields.io/badge/Flask-1a1a1a?style=for-the-badge&logo=flask&logoColor=ffffff)
+![Node.js](https://img.shields.io/badge/Node.js-1a1a1a?style=for-the-badge&logo=nodedotjs&logoColor=339933)
 
 **Security Tools**
 
@@ -66,28 +85,73 @@ class Edwin:
 ![Metasploit](https://img.shields.io/badge/Metasploit-1a1a1a?style=for-the-badge&logo=metasploit&logoColor=2E76A3)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1a1a1a?style=for-the-badge&logo=wireshark&logoColor=1679A7)
 ![TryHackMe](https://img.shields.io/badge/TryHackMe-1a1a1a?style=for-the-badge&logo=tryhackme&logoColor=212C42)
+![VirusTotal](https://img.shields.io/badge/VirusTotal-1a1a1a?style=for-the-badge&logo=virustotal&logoColor=394EFF)
 
-**Infrastructure & Other**
+**Infrastructure & Cloud**
 
 ![Linux](https://img.shields.io/badge/Linux-1a1a1a?style=for-the-badge&logo=linux&logoColor=FCC624)
-![MySQL](https://img.shields.io/badge/MySQL-1a1a1a?style=for-the-badge&logo=mysql&logoColor=4479A1)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-1a1a1a?style=for-the-badge&logo=google-cloud&logoColor=4285F4)
 ![Supabase](https://img.shields.io/badge/Supabase-1a1a1a?style=for-the-badge&logo=supabase&logoColor=3ECF8E)
 ![Vercel](https://img.shields.io/badge/Vercel-1a1a1a?style=for-the-badge&logo=vercel&logoColor=ffffff)
+![MySQL](https://img.shields.io/badge/MySQL-1a1a1a?style=for-the-badge&logo=mysql&logoColor=4479A1)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-1a1a1a?style=for-the-badge&logo=virtualbox&logoColor=2F61D5)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-1a1a1a?style=for-the-badge&logo=google-cloud&logoColor=4285F4)
+![Git](https://img.shields.io/badge/Git-1a1a1a?style=for-the-badge&logo=git&logoColor=F05032)
 
 ---
 
 ## `featured_projects`
 
+<details open>
+<summary>🔴 Offensive Security & Red Team</summary>
+<br>
+
 | Project | Description | Tech |
-|--------|-------------|------|
-| [RavenC2](https://github.com/xtofuub/RavenC2) | PowerShell remote control tool via Telegram for authorized admin and automation experiments | `PowerShell` |
-| [mailsploit](https://github.com/xtofuub/mailsploit) | Email spoofing demo platform analyzing SPF/DMARC, built for defensive testing | `Python` |
-| [PysilonDecoder](https://github.com/xtofuub/PysilonDecoder) | Analyzes and decodes Pysilon malware tokens, automates extraction and payload reconstruction | `Python` |
-| [Hashtrace](https://github.com/xtofuub/Hashtrace) | Chromium extension that highlights crypto hashes and checks VirusTotal reputation inline | `JavaScript` |
-| [SMBitan](https://github.com/xtofuub/SMBitan) | Dark-themed web UI for browsing, searching, and previewing files on SMB/UNC shares | `JavaScript` |
-| [Cyber-Resources](https://github.com/xtofuub/Cyber-Resources) | Curated collection of cybersecurity, OSINT, malware analysis and threat-intel resources I actually use | `Docs` |
+|---------|-------------|------|
+| [RavenC2](https://github.com/xtofuub/RavenC2) | PowerShell C2 tool for managing a Windows machine via Telegram - built for automation experiments and authorized remote administration | `PowerShell` |
+| [PacketStorm](https://github.com/xtofuub/PacketStorm) | Semi-automated Python deauther for Kali Linux - deauthenticates all clients on a network | `Python` `Kali Linux` |
+| [PS-CredentialPhisher](https://github.com/xtofuub/PS-CredentialPhisher) | PowerShell utility for testing Windows CredUI behavior and UAC prompt simulations - security research and authentication workflow testing | `PowerShell` |
+| [mailsploit](https://github.com/xtofuub/mailsploit) | Security-focused email platform demonstrating advanced spoofing techniques while analyzing SPF and DMARC - built for defensive testing | `Python` |
+| [SpoofMail](https://github.com/xtofuub/SpoofMail) | Modern responsive email spoofing UI with file attachment support, previews, and smooth animations | `PHP` `HTML` `CSS` `JS` |
+| [wilma-phish](https://github.com/xtofuub/wilma-phish) | Wilma phishing clone with Discord webhook logging for authorized security testing | `HTML` |
+
+</details>
+
+<details open>
+<summary>🧠 Malware Analysis & Reverse Engineering</summary>
+<br>
+
+| Project | Description | Tech |
+|---------|-------------|------|
+| [Sentinel-VOIP](https://github.com/xtofuub/Sentinel-VOIP) | Reverse-engineering of the Juasapp VoIP protocol using a jailbroken iOS device - unlimited signaling flows extracted via dynamic runtime analysis and rebuilt from scratch | `JavaScript` |
+| [PysilonDecoder](https://github.com/xtofuub/PysilonDecoder) | Analyzes and decodes Pysilon malware tokens - automates extraction, identifies encoding algorithms, and reconstructs the original payload | `Python` |
+| [Hashtrace](https://github.com/xtofuub/Hashtrace) | Lightweight Chromium extension that highlights cryptographic hashes on web pages and fetches VirusTotal reputation inline | `JavaScript` |
+
+</details>
+
+<details open>
+<summary>🌐 Web Tools & Full Stack Development</summary>
+<br>
+
+| Project | Description | Tech |
+|---------|-------------|------|
+| [RevOps-Dashboard](https://github.com/xtofuub/RevOps-Dashboard) | Weekly RevOps metric tracking with analytics, critical signal detection, and executive summaries - live on Vercel | `TypeScript` `Next.js` `Supabase` |
+| [fitsec-focus-coach](https://github.com/xtofuub/fitsec-focus-coach) | Internal employee management platform for FitSec - monitors work sessions, manages break times, and tracks daily productivity | `TypeScript` |
+| [fitsec-usbguard](https://github.com/xtofuub/fitsec-usbguard) | USBGuard UI revamp with Framer and Liquid Glass effects - high-performance animations and professional security-themed design | `TypeScript` |
+| [SMBitan](https://github.com/xtofuub/SMBitan) | Dark-themed web UI for browsing, searching, and previewing files on SMB/UNC network shares | `JavaScript` `Python` `Flask` |
+| [Solveify](https://github.com/xtofuub/Solveify) | Browser extension that uses the Gemini API to instantly analyze highlighted questions and retrieve answers - supports multiple choice and open-ended queries | `JavaScript` |
+| [NyxRepost](https://github.com/xtofuub/NyxRepost) | Advanced TikTok repost analytics dashboard with charts, word clouds, creator stats, and profile comparison via TikTok API scraper | `HTML` `JS` |
+
+</details>
+
+<details>
+<summary>📚 Research & Resources</summary>
+<br>
+
+| Project | Description | Tech |
+|---------|-------------|------|
+| [Cyber-Resources](https://github.com/xtofuub/Cyber-Resources) | Curated collection of cybersecurity, OSINT, malware analysis, reconnaissance, and threat-intel resources I personally use | `Docs` |
+
+</details>
 
 ---
 
@@ -116,3 +180,5 @@ class Edwin:
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:cc0000,60:550000,100:080808&height=100&section=footer" width="100%"/>
+
+</div>
