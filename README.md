@@ -124,20 +124,20 @@ class Edwin:
 
 ## `featured_projects`
 
+Public repositories with real project descriptions.
+
 <details open>
 <summary>🔴 Offensive Security & Red Team</summary>
 <br>
 
 | Project | Description | Tech |
 |---------|-------------|------|
-| [RavenC2](https://github.com/xtofuub/RavenC2) | PowerShell C2 tool for managing a Windows machine via Telegram - built for automation experiments and authorized remote administration | `PowerShell` |
+| [RavenC2](https://github.com/xtofuub/RavenC2) | PowerShell-based remote control tool for managing a Windows machine via Telegram, intended for learning, automation experiments, and authorized remote administration | `PowerShell` |
 | [PacketStorm](https://github.com/xtofuub/PacketStorm) | Semi-automated Python deauther for Kali Linux lab environments | `Python` `Kali Linux` |
-| [PS-CredentialPhisher](https://github.com/xtofuub/PS-CredentialPhisher) | PowerShell utility for testing Windows CredUI behavior and UAC prompt simulations - security research and authentication workflow testing | `PowerShell` |
-| [mailsploit](https://github.com/xtofuub/mailsploit) | Security-focused email platform demonstrating advanced spoofing techniques while analyzing SPF and DMARC - built for defensive testing | `Python` |
-| [SpoofMail](https://github.com/xtofuub/SpoofMail) | Modern responsive email spoofing UI with file attachment support, previews, and smooth animations | `PHP` `HTML` `CSS` `JS` |
-| [wilma-phish](https://github.com/xtofuub/wilma-phish) | Wilma phishing clone for authorized awareness and security testing demonstrations | `HTML` |
-| [XSwitch](https://github.com/xtofuub/XSwitch) | Security / utility project from my lab collection | `Security` `Utility` |
-| [wifi-upgrade-illusion-master](https://github.com/xtofuub/wifi-upgrade-illusion-master) | Wireless security themed UI / testing project | `Web` `Security` |
+| [PS-CredentialPhisher](https://github.com/xtofuub/PS-CredentialPhisher) | PowerShell utility for testing Windows CredUI behavior and UAC prompt simulations in controlled environments | `PowerShell` |
+| [mailsploit](https://github.com/xtofuub/mailsploit) | Security-focused email testing platform for analyzing spoofing behavior, SPF, and DMARC in defensive contexts | `Python` |
+| [SpoofMail](https://github.com/xtofuub/SpoofMail) | Modern responsive email security testing UI with file attachment support, previews, and smooth animations | `PHP` `HTML` `CSS` `JS` |
+| [wilma-phish](https://github.com/xtofuub/wilma-phish) | Wilma login clone made for authorized awareness and security testing demonstrations | `HTML` |
 
 </details>
 
@@ -147,13 +147,13 @@ class Edwin:
 
 | Project | Description | Tech |
 |---------|-------------|------|
-| [Sentinel-VOIP](https://github.com/xtofuub/Sentinel-VOIP) | Reverse-engineering of the Juasapp VoIP protocol using a jailbroken iOS device - signaling flows extracted via dynamic runtime analysis and rebuilt from scratch | `JavaScript` `iOS` `Frida` |
-| [PysilonDecoder](https://github.com/xtofuub/PysilonDecoder) | Analyzes and decodes Pysilon malware tokens - automates extraction, identifies encoding algorithms, and reconstructs the original payload | `Python` |
-| [Hashtrace](https://github.com/xtofuub/Hashtrace) | Lightweight Chromium extension that highlights cryptographic hashes on web pages and fetches VirusTotal reputation inline | `JavaScript` `VirusTotal` |
+| [Sentinel-VOIP](https://github.com/xtofuub/Sentinel-VOIP) | Reverse-engineering research around VoIP app behavior using dynamic iOS runtime analysis | `JavaScript` `iOS` `Frida` |
+| [PysilonDecoder](https://github.com/xtofuub/PysilonDecoder) | Python tool for analyzing and decoding Pysilon-related malware artifacts and payload structure | `Python` |
+| [Hashtrace](https://github.com/xtofuub/Hashtrace) | Chromium extension that highlights cryptographic hashes on web pages and checks VirusTotal reputation inline | `JavaScript` `VirusTotal` |
 | [REVios-AI](https://github.com/xtofuub/REVios-AI) | AI-assisted iOS reverse engineering and jailbreak analysis workspace concept | `TypeScript` `AI` `iOS` |
 | [ios-jailbreak-ssh-mcp](https://github.com/xtofuub/ios-jailbreak-ssh-mcp) | MCP-style bridge concept for interacting with jailbroken iOS files over SSH in authorized environments | `TypeScript` `SSH` `MCP` |
-| [Veil-AI](https://github.com/xtofuub/Veil-AI) | AI binary analysis / reverse engineering landing page concept | `HTML` `CSS` `JS` |
-| [Melani-AI](https://github.com/xtofuub/Melani-AI) | Landing page for an AI-native browser-based reverse engineering analyst concept | `Landing Page` `AI` |
+| [Veil-AI](https://github.com/xtofuub/Veil-AI) | AI binary analysis and reverse engineering landing page concept | `HTML` `CSS` `JS` |
+| [Melani-AI](https://github.com/xtofuub/Melani-AI) | Concept landing page for an AI-native reverse engineering workspace for binary and malware analysis | `Landing Page` `AI` |
 
 </details>
 
@@ -163,31 +163,23 @@ class Edwin:
 
 | Project | Description | Tech |
 |---------|-------------|------|
-| [RevOps-Dashboard](https://github.com/xtofuub/RevOps-Dashboard) | Weekly RevOps metric tracking with analytics, critical signal detection, and executive summaries - live on Vercel | `TypeScript` `Next.js` `Supabase` |
-| [fitsec-focus-coach](https://github.com/xtofuub/fitsec-focus-coach) | Internal employee management platform for FitSec - monitors work sessions, manages break times, and tracks daily productivity | `TypeScript` |
-| [fitsec-usbguard](https://github.com/xtofuub/fitsec-usbguard) | USBGuard UI revamp with Framer and Liquid Glass effects - high-performance animations and professional security-themed design | `TypeScript` `UI` |
+| [RevOps-Dashboard](https://github.com/xtofuub/RevOps-Dashboard) | Weekly RevOps metric tracking dashboard with analytics, critical signal detection, and executive summaries | `TypeScript` `Next.js` `Supabase` |
+| [fitsec-focus-coach](https://github.com/xtofuub/fitsec-focus-coach) | Internal employee management platform for FitSec for monitoring work sessions, break times, and productivity | `TypeScript` |
+| [fitsec-usbguard](https://github.com/xtofuub/fitsec-usbguard) | USBGuard UI revamp with Framer-style motion, liquid glass effects, and a polished security-themed interface | `TypeScript` `UI` |
 | [SMBitan](https://github.com/xtofuub/SMBitan) | Dark-themed web UI for browsing, searching, and previewing files on SMB/UNC network shares | `JavaScript` `Python` `Flask` |
-| [Solveify](https://github.com/xtofuub/Solveify) | Browser extension that uses the Gemini API to instantly analyze highlighted questions and retrieve answers - supports multiple choice and open-ended queries | `JavaScript` `Browser Extension` |
-| [NyxRepost](https://github.com/xtofuub/NyxRepost) | Advanced TikTok repost analytics dashboard with charts, word clouds, creator stats, and profile comparison via TikTok API scraper | `HTML` `JS` |
+| [Solveify](https://github.com/xtofuub/Solveify) | Browser extension that uses the Gemini API to analyze highlighted questions and generate answers | `JavaScript` `Browser Extension` |
+| [NyxRepost](https://github.com/xtofuub/NyxRepost) | Advanced TikTok repost analytics dashboard with charts, word clouds, creator stats, and profile comparison | `HTML` `JS` |
 | [xtofuub.github.io](https://github.com/xtofuub/xtofuub.github.io) | Personal portfolio website | `HTML` `CSS` `JS` |
-| [internspark-connect](https://github.com/xtofuub/internspark-connect) | Internship / career connection web application concept | `Web App` |
-| [lastfm-yearning](https://github.com/xtofuub/lastfm-yearning) | Music / Last.fm inspired web project | `Web` `API` |
-| [literate-octo-meme](https://github.com/xtofuub/literate-octo-meme) | Experimental web project from my build lab | `Web` |
-| [DSADSAD](https://github.com/xtofuub/DSADSAD) | Experimental frontend / web project | `Web` |
-| [Affinity](https://github.com/xtofuub/Affinity) | Large experimental product / interface project | `Web` `UI` |
 
 </details>
 
-<details open>
-<summary>📚 Research, Resources & Creative</summary>
+<details>
+<summary>📚 Research & Resources</summary>
 <br>
 
 | Project | Description | Tech |
 |---------|-------------|------|
-| [Cyber-Resources](https://github.com/xtofuub/Cyber-Resources) | Curated collection of cybersecurity, OSINT, malware analysis, reconnaissance, and threat-intel resources I personally use | `Docs` |
-| [Wallpapers](https://github.com/xtofuub/Wallpapers) | Wallpaper and visual asset collection | `Design` |
-| [image](https://github.com/xtofuub/image) | Image / asset repository | `Assets` |
-| [tofuub](https://github.com/xtofuub/tofuub) | Profile / identity repository | `GitHub` |
+| [Cyber-Resources](https://github.com/xtofuub/Cyber-Resources) | Curated collection of cybersecurity, OSINT, malware analysis, reconnaissance, and threat intelligence resources | `Docs` |
 
 </details>
 
