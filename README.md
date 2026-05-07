@@ -126,7 +126,7 @@ class Edwin:
 
 Public repositories with real project descriptions.
 
-<details open>
+<details close>
 <summary>🔴 Offensive Security & Red Team</summary>
 <br>
 
