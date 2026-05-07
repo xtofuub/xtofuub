@@ -22,11 +22,11 @@
   role      →  Cybersecurity Specialist Jr
   focus     →  Security  /  Full Stack Dev  /  Reverse Engineering
 
-  security  →  pentesting, red team concepts, adversary simulation
-  rev_eng   →  malware analysis, protocol dissection, decoding the unknown
+  security  →  web pentesting, OSINT, CTI, malware analysis workflows
+  rev_eng   →  reverse engineering, iOS app analysis, Frida instrumentation
   building  →  if something doesn't exist and I need it, I build it
-  stack     →  TypeScript, Next.js, PHP, Flask, Python, MySQL
-  tools     →  Kali, Burp Suite, Metasploit, Wireshark, VirtualBox
+  stack     →  TypeScript, React, Next.js, Node.js, Python, PowerShell, PHP
+  tools     →  Kali, Burp Suite, Nmap, Wireshark, Frida, Triage, Shodan, Maltego
   vibe      →  "learn by breaking, build by doing"
 
 ┌──(edwin㉿kali)-[~]
@@ -42,15 +42,20 @@ class Edwin:
     def __init__(self):
         self.currently_learning = [
             "Reverse Engineering",
-            "Python (scripting + tooling)",
-            "PowerShell (automation + post-exploitation)",
-            "Linux internals",
-            "PHP + web app security",
-            "HTML / CSS (yes, also phishing pages)"
+            "Malware analysis + CTI reporting",
+            "iOS pentesting with Frida",
+            "Python scripting + tooling",
+            "PowerShell automation",
+            "Linux and Windows internals",
+            "Web app security",
+            "Full-stack security products"
         ]
         self.currently_building = [
             "Security tools",
+            "AI-assisted analysis workflows",
             "Full stack web apps",
+            "Browser extensions",
+            "Internal dashboards and security UIs",
             "Random stuff that seems useful"
         ]
         self.vibe = "learn by breaking, build by doing"
@@ -67,33 +72,51 @@ class Edwin:
 ![JavaScript](https://img.shields.io/badge/JavaScript-1a1a1a?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![PowerShell](https://img.shields.io/badge/PowerShell-1a1a1a?style=for-the-badge&logo=powershell&logoColor=5391FE)
 ![PHP](https://img.shields.io/badge/PHP-1a1a1a?style=for-the-badge&logo=php&logoColor=777BB4)
+![SQL](https://img.shields.io/badge/SQL-1a1a1a?style=for-the-badge&logo=sqlite&logoColor=003B57)
 ![HTML5](https://img.shields.io/badge/HTML5-1a1a1a?style=for-the-badge&logo=html5&logoColor=E34F26)
 ![CSS3](https://img.shields.io/badge/CSS3-1a1a1a?style=for-the-badge&logo=css3&logoColor=1572B6)
 ![Bash](https://img.shields.io/badge/Bash-1a1a1a?style=for-the-badge&logo=gnubash&logoColor=4EAA25)
 
-**Frameworks & Libraries**
+**Frontend, Backend & Product UI**
 
+![React](https://img.shields.io/badge/React-1a1a1a?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-1a1a1a?style=for-the-badge&logo=nextdotjs&logoColor=ffffff)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-1a1a1a?style=for-the-badge&logo=tailwindcss&logoColor=38B2AC)
-![Flask](https://img.shields.io/badge/Flask-1a1a1a?style=for-the-badge&logo=flask&logoColor=ffffff)
 ![Node.js](https://img.shields.io/badge/Node.js-1a1a1a?style=for-the-badge&logo=nodedotjs&logoColor=339933)
+![Flask](https://img.shields.io/badge/Flask-1a1a1a?style=for-the-badge&logo=flask&logoColor=ffffff)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-1a1a1a?style=for-the-badge&logo=tailwindcss&logoColor=38B2AC)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-1a1a1a?style=for-the-badge&logo=shadcnui&logoColor=ffffff)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-1a1a1a?style=for-the-badge&logo=framer&logoColor=0055FF)
+![Chrome Extensions](https://img.shields.io/badge/Browser_Extensions-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=4285F4)
 
-**Security Tools**
+**Cybersecurity, Malware Analysis & CTI**
 
 ![Kali Linux](https://img.shields.io/badge/Kali_Linux-1a1a1a?style=for-the-badge&logo=kali-linux&logoColor=557C94)
 ![Burp Suite](https://img.shields.io/badge/Burp_Suite-1a1a1a?style=for-the-badge&logo=burpsuite&logoColor=FF6633)
-![Metasploit](https://img.shields.io/badge/Metasploit-1a1a1a?style=for-the-badge&logo=metasploit&logoColor=2E76A3)
+![Nmap](https://img.shields.io/badge/Nmap-1a1a1a?style=for-the-badge&logoColor=4682B4)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1a1a1a?style=for-the-badge&logo=wireshark&logoColor=1679A7)
-![TryHackMe](https://img.shields.io/badge/TryHackMe-1a1a1a?style=for-the-badge&logo=tryhackme&logoColor=212C42)
+![Metasploit](https://img.shields.io/badge/Metasploit-1a1a1a?style=for-the-badge&logo=metasploit&logoColor=2E76A3)
+![Frida](https://img.shields.io/badge/Frida-1a1a1a?style=for-the-badge&logoColor=ffffff)
+![Ghidra](https://img.shields.io/badge/Ghidra-1a1a1a?style=for-the-badge&logoColor=ffffff)
+![YARA](https://img.shields.io/badge/YARA-1a1a1a?style=for-the-badge&logoColor=cc0000)
+![Triage](https://img.shields.io/badge/Triage-1a1a1a?style=for-the-badge&logoColor=ffffff)
 ![VirusTotal](https://img.shields.io/badge/VirusTotal-1a1a1a?style=for-the-badge&logo=virustotal&logoColor=394EFF)
+![Shodan](https://img.shields.io/badge/Shodan-1a1a1a?style=for-the-badge&logoColor=cc0000)
+![Maltego](https://img.shields.io/badge/Maltego-1a1a1a?style=for-the-badge&logoColor=00AEEF)
+![OSINT](https://img.shields.io/badge/OSINT-1a1a1a?style=for-the-badge&logoColor=ffffff)
+![TryHackMe](https://img.shields.io/badge/TryHackMe-1a1a1a?style=for-the-badge&logo=tryhackme&logoColor=212C42)
 
-**Infrastructure & Cloud**
+**Systems, Cloud & Infrastructure**
 
 ![Linux](https://img.shields.io/badge/Linux-1a1a1a?style=for-the-badge&logo=linux&logoColor=FCC624)
+![Windows](https://img.shields.io/badge/Windows-1a1a1a?style=for-the-badge&logo=windows&logoColor=0078D4)
+![iOS](https://img.shields.io/badge/iOS-1a1a1a?style=for-the-badge&logo=apple&logoColor=ffffff)
+![Azure](https://img.shields.io/badge/Azure-1a1a1a?style=for-the-badge&logo=microsoftazure&logoColor=0078D4)
+![Active Directory](https://img.shields.io/badge/Active_Directory-1a1a1a?style=for-the-badge&logo=microsoft&logoColor=00A4EF)
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-1a1a1a?style=for-the-badge&logo=google-cloud&logoColor=4285F4)
 ![Supabase](https://img.shields.io/badge/Supabase-1a1a1a?style=for-the-badge&logo=supabase&logoColor=3ECF8E)
 ![Vercel](https://img.shields.io/badge/Vercel-1a1a1a?style=for-the-badge&logo=vercel&logoColor=ffffff)
 ![MySQL](https://img.shields.io/badge/MySQL-1a1a1a?style=for-the-badge&logo=mysql&logoColor=4479A1)
+![Docker](https://img.shields.io/badge/Docker-1a1a1a?style=for-the-badge&logo=docker&logoColor=2496ED)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-1a1a1a?style=for-the-badge&logo=virtualbox&logoColor=2F61D5)
 ![Git](https://img.shields.io/badge/Git-1a1a1a?style=for-the-badge&logo=git&logoColor=F05032)
 
