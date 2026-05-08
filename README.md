@@ -152,7 +152,6 @@ Public repositories with real project descriptions.
 | [Hashtrace](https://github.com/xtofuub/Hashtrace) | Chromium extension that highlights cryptographic hashes on web pages and checks VirusTotal reputation inline | `JavaScript` `VirusTotal` |
 | [REVios-AI](https://github.com/xtofuub/REVios-AI) | AI-assisted iOS reverse engineering and jailbreak analysis workspace concept | `TypeScript` `AI` `iOS` |
 | [ios-jailbreak-ssh-mcp](https://github.com/xtofuub/ios-jailbreak-ssh-mcp) | MCP-style bridge concept for interacting with jailbroken iOS files over SSH in authorized environments | `TypeScript` `SSH` `MCP` |
-| [Veil-AI](https://github.com/xtofuub/Veil-AI) | AI binary analysis and reverse engineering landing page concept | `HTML` `CSS` `JS` |
 | [Melani-AI⭐](https://github.com/xtofuub/Melani-AI) | Concept landing page for an AI-native reverse engineering workspace for binary and malware analysis | `Landing Page` `AI` |
 
 </details>
