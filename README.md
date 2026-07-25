@@ -6,7 +6,6 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=800&color=CC0000&center=true&vCenter=true&width=600&lines=Operate+in+the+shadows.;Build+what+others+won't.;Break+things+to+understand+them.;%5B+Security+%7C+Full+Stack+%7C+Reverse+Engineering+%5D)](https://git.io/typing-svg)
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-xtofuub.github.io-CC0000?style=for-the-badge&logoColor=white)](https://xtofuub.github.io/)
 
 </div>
 
