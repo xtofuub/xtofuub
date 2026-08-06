@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 333" role="img" aria-label="Edwin Chen profile banner">
+<defs>
+ <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050505"/><stop offset=".7" stop-color="#080607"/><stop offset="1" stop-color="#16070a"/></linearGradient>
+ <radialGradient id="g" cx="80%" cy="30%" r="55%"><stop stop-color="#a30e1b" stop-opacity=".3"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+ <linearGradient id="h" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#260609"/><stop offset=".42" stop-color="#7d111c"/><stop offset=".72" stop-color="#d52b3b"/><stop offset="1" stop-color="#43070c"/></linearGradient>
+ <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6" result="x"/><feMerge><feMergeNode in="x"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="1" y="1" width="1198" height="331" rx="18" fill="url(#b)" stroke="#2b2f34" stroke-width="2"/>
+<rect x="1" y="1" width="1198" height="331" rx="18" fill="url(#g)"/>
+<path d="M-40 280 C250 285 470 235 650 135 C790 58 900 12 1080 -30" fill="none" stroke="#ef3345" stroke-width="1.6" opacity=".7"/>
+<g opacity=".44" fill="#ef3345"><circle cx="690" cy="55" r="1.4"/><circle cx="728" cy="82" r="1.1"/><circle cx="770" cy="45" r="1.5"/><circle cx="808" cy="102" r="1.2"/><circle cx="850" cy="65" r="1.1"/><circle cx="900" cy="118" r="1.4"/><circle cx="950" cy="82" r="1.2"/><circle cx="1000" cy="132" r="1.3"/><circle cx="1050" cy="95" r="1.1"/><circle cx="1100" cy="150" r="1.3"/></g>
+<text x="70" y="145" fill="#eadfd3" font-family="Georgia,serif" font-size="78" letter-spacing="-2">Edwin</text>
+<text x="390" y="145" fill="#eadfd3" font-family="Georgia,serif" font-size="78" font-style="italic" letter-spacing="-3">Chen</text>
+<text x="75" y="195" fill="#ef3345" font-family="monospace" font-size="25" letter-spacing="2">@xtofuub</text>
+<text x="75" y="252" fill="#9d948c" font-family="Arial,sans-serif" font-size="13" letter-spacing="3">REVERSE ENGINEERING</text><circle cx="295" cy="247" r="3" fill="#ef3345"/>
+<text x="315" y="252" fill="#9d948c" font-family="Arial,sans-serif" font-size="13" letter-spacing="3">SECURITY TOOLING</text><circle cx="520" cy="247" r="3" fill="#ef3345"/>
+<text x="540" y="252" fill="#9d948c" font-family="Arial,sans-serif" font-size="13" letter-spacing="3">PRACTICAL RESEARCH</text>
+<g transform="translate(0,-3)" filter="url(#glow)">
+ <path d="M1205 38 C1129 38 1066 39 1017 45 C965 52 929 63 891 82 C873 91 861 105 866 118 C871 131 887 136 907 130 C943 119 978 105 1014 100 C1060 94 1104 100 1148 112 L1205 127 Z" fill="url(#h)"/>
+ <path d="M1008 96 C1053 94 1090 107 1111 131 C1127 150 1128 174 1115 197 C1100 222 1076 233 1047 229 C1018 225 995 207 981 184 C969 164 963 144 972 124 C979 108 990 100 1008 96 Z" fill="url(#h)"/>
+ <path d="M1107 145 C1132 151 1147 169 1147 193 C1147 219 1139 248 1129 273 C1124 286 1111 292 1100 287 C1089 282 1085 270 1090 257 C1099 235 1106 211 1106 190 C1106 173 1100 160 1091 153 Z" fill="url(#h)"/>
+ <path d="M1083 147 C1104 155 1114 174 1111 199 C1108 229 1098 263 1087 291 C1082 305 1068 311 1057 305 C1046 299 1043 286 1049 272 C1059 247 1067 219 1068 198 C1069 178 1061 164 1050 157 Z" fill="url(#h)"/>
+ <path d="M1051 151 C1069 160 1075 179 1070 203 C1064 231 1051 261 1039 284 C1032 297 1018 301 1008 294 C998 287 997 274 1004 261 C1015 240 1025 216 1028 197 C1031 178 1023 166 1013 160 Z" fill="url(#h)"/>
+ <path d="M1019 157 C1033 168 1035 185 1029 205 C1021 229 1008 250 994 267 C986 277 973 278 964 270 C956 262 957 250 965 240 C976 226 986 209 991 194 C996 179 991 169 983 163 Z" fill="url(#h)"/>
+ <path d="M990 119 C970 124 951 135 932 150 C916 163 901 179 887 193 C878 202 864 203 855 194 C846 185 847 171 857 162 C875 145 893 127 914 113 C934 100 955 92 976 91 Z" fill="url(#h)"/>
+ <path d="M1200 46 C1116 45 1058 46 1014 51 C966 57 930 69 894 87" fill="none" stroke="#ff6c78" stroke-width="2.5" opacity=".55"/>
+ <path d="M981 104 C1005 95 1044 99 1072 113" fill="none" stroke="#ff6c78" stroke-width="2" opacity=".4"/>
+</g>
+</svg>
