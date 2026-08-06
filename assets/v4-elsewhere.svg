@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 150" role="img" aria-label="ELSEWHERE">
+<rect x="1" y="1" width="1198" height="148" rx="18" fill="#08090b" stroke="#2b2f34" stroke-width="2"/>
+<path d="M0 130 C85 120 130 80 170 20" fill="none" stroke="#4a171c" stroke-width="1.1" opacity=".6"/><circle cx="32" cy="120" r="3" fill="#ef3345"/>
+<text x="38" y="42" fill="#ef3345" font-family="monospace" font-size="14" font-weight="700" letter-spacing="2">05 /</text>
+<text x="38" y="82" fill="#eadfd3" font-family="Georgia,serif" font-size="32">ELSEWHERE</text>
+<text x="38" y="113" fill="#9d948c" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5"><tspan x="38" dy="0">LINKS TO PROFILES AND THE REST</tspan><tspan x="38" dy="16">OF MY PUBLIC WORK</tspan></text>
+<line x1="460" y1="28" x2="460" y2="122" stroke="#ef3345" stroke-width="2" opacity=".8"/>
+<rect x="500" y="52" width="260" height="58" rx="7" fill="#0b0d10" stroke="#ef3345"/><path d="M530 90 L548 72 M537 72 H548 V83" fill="none" stroke="#ef3345" stroke-width="2"/><text x="570" y="88" fill="#eadfd3" font-family="Georgia,serif" font-size="20">TryHackMe</text>
+<rect x="780" y="52" width="285" height="58" rx="7" fill="#0b0d10" stroke="#ef3345"/><path d="M810 90 L828 72 M817 72 H828 V83" fill="none" stroke="#ef3345" stroke-width="2"/><text x="850" y="88" fill="#eadfd3" font-family="Georgia,serif" font-size="20">More projects</text><circle cx="1148" cy="28" r="3" fill="#ef3345"/><circle cx="1164" cy="28" r="3" fill="#70252c"/><circle cx="1180" cy="28" r="3" fill="#391a1d"/>
+</svg>
