@@ -12,9 +12,9 @@
 
 <p align="center"><img src="./assets/v5-elsewhere.svg" width="100%" alt="Elsewhere" /></p>
 
-<table width="100%"><tr>
-<td width="50%"><a href="https://tryhackme.com/p/tofuub"><img src="./assets/v5-tryhackme.svg" width="100%" alt="TryHackMe" /></a></td>
-<td width="50%"><a href="https://github.com/xtofuub?tab=repositories"><img src="./assets/v5-projects.svg" width="100%" alt="More projects" /></a></td>
-</tr></table>
+<p align="center">
+  <a href="https://tryhackme.com/p/tofuub"><img src="https://raw.githubusercontent.com/xtofuub/xtofuub/main/assets/v5-tryhackme.svg" width="49%" alt="TryHackMe" /></a>
+  <a href="https://github.com/xtofuub?tab=repositories"><img src="https://raw.githubusercontent.com/xtofuub/xtofuub/main/assets/v5-projects.svg" width="49%" alt="More projects" /></a>
+</p>
 
 <p align="center"><img src="./assets/v4-footer.svg" width="100%" alt="There are more projects across my repositories" /></p>
