@@ -1,4 +1,4 @@
-<img src="banner.svg" width="100%" alt="Edwin Chen — reverse engineering, security tooling and practical research" />
+<img src="./assets/banner.webp" width="100%" alt="Edwin Chen — reverse engineering, security tooling and practical research" />
 
 <br>
 
@@ -10,9 +10,7 @@
 
 </div>
 
----
-
-## `01 / CURRENT SIGNAL`
+<img src="./assets/section-current-signal.svg" width="100%" alt="01 / Current Signal" />
 
 <table>
 <tr>
@@ -40,7 +38,7 @@ Small tools that remove friction from triage and analysis.
 </tr>
 </table>
 
-## `02 / LAB NOTES`
+<img src="./assets/section-lab-notes.svg" width="100%" alt="02 / Lab Notes" />
 
 ```text
 BEHAVIOUR  / Follow what the software does, not what it claims.
@@ -48,7 +46,7 @@ WORKFLOW   / Repetitive analysis steps should eventually become tools.
 RESEARCH   / Understand the system before trying to automate it.
 ```
 
-## `03 / OPERATING PRINCIPLES`
+<img src="./assets/section-operating-principles.svg" width="100%" alt="03 / Operating Principles" />
 
 <table>
 <tr>
@@ -82,7 +80,7 @@ Solve real friction and keep the interface simple.
 </tr>
 </table>
 
-## `04 / TOOLBELT`
+<img src="./assets/section-toolbelt.svg" width="100%" alt="04 / Toolbelt" />
 
 <div align="center">
 
@@ -96,7 +94,7 @@ Solve real friction and keep the interface simple.
 
 </div>
 
-## `05 / ELSEWHERE`
+<img src="./assets/section-elsewhere.svg" width="100%" alt="05 / Elsewhere" />
 
 <div align="center">
 
@@ -110,4 +108,4 @@ Solve real friction and keep the interface simple.
 
 <br>
 
-<img src="footer-banner.svg" width="100%" alt="More projects in my repositories" />
+<img src="./assets/footer-banner.svg" width="100%" alt="More projects in my repositories" />

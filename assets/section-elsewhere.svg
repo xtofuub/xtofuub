@@ -1,0 +1,13 @@
+<svg width="100%" viewBox="0 0 1200 88" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">05 / ELSEWHERE</title>
+  <desc id="desc">Section header for ELSEWHERE.</desc>
+  <rect width="1200" height="88" rx="14" fill="#050505"/>
+  <line x1="22" y1="12" x2="22" y2="76" stroke="#ef3345" stroke-width="3"/>
+  <line x1="0" y1="87" x2="1200" y2="87" stroke="#341014" stroke-width="1"/>
+  <text x="46" y="36" fill="#ef3345" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" letter-spacing="3">05 /</text>
+  <text x="124" y="36" fill="#f2ece7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="1.2">ELSEWHERE</text>
+  <text x="46" y="62" fill="#b7aaa4" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.2">LINKS TO PROFILES AND THE REST OF MY PUBLIC WORK</text>
+  <circle cx="1148" cy="28" r="3" fill="#ef3345"/>
+  <circle cx="1164" cy="28" r="3" fill="#7a3036"/>
+  <circle cx="1180" cy="28" r="3" fill="#472126"/>
+</svg>
