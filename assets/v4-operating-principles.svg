@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 165" role="img" aria-label="OPERATING PRINCIPLES">
+<rect x="1" y="1" width="1198" height="163" rx="18" fill="#08090b" stroke="#2b2f34" stroke-width="2"/>
+<path d="M0 145 C85 135 130 80 170 20" fill="none" stroke="#4a171c" stroke-width="1.1" opacity=".6"/><circle cx="32" cy="135" r="3" fill="#ef3345"/>
+<text x="38" y="42" fill="#ef3345" font-family="monospace" font-size="14" font-weight="700" letter-spacing="2">03 /</text>
+<text x="38" y="82" fill="#eadfd3" font-family="Georgia,serif" font-size="32">OPERATING PRINCIPLES</text>
+<text x="38" y="113" fill="#9d948c" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5"><tspan x="38" dy="0">HOW I APPROACH TOOLS, EVIDENCE,</tspan><tspan x="38" dy="16">AND PROBLEM SOLVING</tspan></text>
+<line x1="460" y1="28" x2="460" y2="137" stroke="#ef3345" stroke-width="2" opacity=".8"/>
+<circle cx="505" cy="50" r="3" fill="#ef3345"/><text x="523" y="55" fill="#eadfd3" font-family="Georgia,serif" font-size="18">Understand before automating</text><circle cx="505" cy="86" r="3" fill="#ef3345"/><text x="523" y="91" fill="#eadfd3" font-family="Georgia,serif" font-size="18">Prefer evidence over assumptions</text><circle cx="505" cy="122" r="3" fill="#ef3345"/><text x="523" y="127" fill="#eadfd3" font-family="Georgia,serif" font-size="18">Build tools that stay useful</text><circle cx="1148" cy="28" r="3" fill="#ef3345"/><circle cx="1164" cy="28" r="3" fill="#70252c"/><circle cx="1180" cy="28" r="3" fill="#391a1d"/>
+</svg>
