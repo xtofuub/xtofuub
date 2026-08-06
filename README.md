@@ -1,4 +1,4 @@
-<p align="center"><img src="./assets/v4-banner.svg" width="100%" alt="Edwin Chen — reverse engineering, security tooling and practical research" /></p>
+<p align="center"><img src="./assets/v5-banner.svg" width="100%" alt="Edwin Chen — reverse engineering, security tooling and practical research" /></p>
 <p align="center"><img src="./assets/v4-intro.svg" width="100%" alt="Building practical security tools and studying how systems break." /></p>
 <p align="center"><img src="./assets/v4-current-signal.svg" width="100%" alt="Current Signal" /></p>
 <p align="center"><img src="./assets/v4-lab-notes.svg" width="100%" alt="Lab Notes" /></p>
