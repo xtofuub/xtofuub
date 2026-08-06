@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 190" role="img" aria-label="Operating Principles">
+  <rect x="1" y="1" width="1198" height="188" rx="18" fill="#08090b" stroke="#2b2f34" stroke-width="2"/>
+  <text x="44" y="42" fill="#ef3345" font-family="monospace" font-size="13" letter-spacing="2">03 / OPERATING PRINCIPLES</text>
+  <text x="44" y="88" fill="#eadfd3" font-family="Georgia, serif" font-size="34">Three rules that keep the work honest.</text>
+  <line x1="44" y1="112" x2="1156" y2="112" stroke="#34383d"/>
+  <text x="44" y="145" fill="#ef3345" font-family="monospace" font-size="12">01</text>
+  <text x="78" y="146" fill="#eadfd3" font-family="Georgia, serif" font-size="19">Understand before automating.</text>
+  <line x1="395" y1="128" x2="395" y2="164" stroke="#24282c"/>
+  <text x="430" y="145" fill="#ef3345" font-family="monospace" font-size="12">02</text>
+  <text x="464" y="146" fill="#eadfd3" font-family="Georgia, serif" font-size="19">Prefer evidence over assumptions.</text>
+  <line x1="824" y1="128" x2="824" y2="164" stroke="#24282c"/>
+  <text x="859" y="145" fill="#ef3345" font-family="monospace" font-size="12">03</text>
+  <text x="893" y="146" fill="#eadfd3" font-family="Georgia, serif" font-size="19">Build tools that stay useful.</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 330" role="img" aria-label="Edwin Chen — reverse engineering, security tooling and practical research">
+  <rect x="1" y="1" width="1198" height="328" rx="20" fill="#08090b" stroke="#2b2f34" stroke-width="2"/>
+  <path d="M760 -30 C925 42 1006 157 1028 350" fill="none" stroke="#4a171c" stroke-width="1.2"/>
+  <path d="M-40 286 C235 242 432 282 660 346" fill="none" stroke="#301216" stroke-width="1"/>
+  <line x1="60" y1="55" x2="104" y2="55" stroke="#ef3345" stroke-width="2"/>
+  <text x="60" y="86" fill="#ef3345" font-family="monospace" font-size="13" letter-spacing="2.4">PROFILE / XTOFUUB</text>
+  <text x="58" y="176" fill="#eadfd3" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-weight="500">Edwin</text>
+  <text x="390" y="176" fill="#d8cbc1" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-style="italic" font-weight="400">Chen</text>
+  <text x="63" y="222" fill="#ef3345" font-family="monospace" font-size="22" letter-spacing="3">@xtofuub</text>
+  <line x1="63" y1="245" x2="109" y2="245" stroke="#ef3345" stroke-width="2"/>
+  <text x="63" y="278" fill="#9d948c" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">REVERSE ENGINEERING</text>
+  <circle cx="287" cy="274" r="2.5" fill="#ef3345"/>
+  <text x="306" y="278" fill="#9d948c" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">SECURITY TOOLING</text>
+  <circle cx="496" cy="274" r="2.5" fill="#ef3345"/>
+  <text x="515" y="278" fill="#9d948c" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">PRACTICAL RESEARCH</text>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1185 47 C1117 38 1066 43 1017 63 C981 78 950 101 918 126" stroke="#7a1d26" stroke-width="2"/>
+    <path d="M1185 47 C1117 38 1066 43 1017 63 C981 78 950 101 918 126 C902 139 885 145 875 135 C865 125 870 111 884 101 C915 78 947 58 984 45" stroke="#ef3345" stroke-width="1.6"/>
+    <path d="M1005 84 C972 96 942 113 913 134 C899 144 883 147 874 138" stroke="#ef3345" stroke-width="1.4"/>
+    <path d="M1034 98 C1001 116 972 139 946 165 C934 177 917 179 907 169 C897 159 900 144 912 133 C938 109 966 88 998 72" stroke="#ef3345" stroke-width="1.5"/>
+    <path d="M1060 113 C1031 134 1008 160 988 189 C979 202 963 205 952 196 C941 187 942 172 951 160 C970 134 992 110 1019 90" stroke="#ef3345" stroke-width="1.4"/>
+    <path d="M1082 129 C1060 151 1043 176 1029 202 C1022 215 1008 220 997 213 C986 206 985 192 992 180 C1005 156 1021 134 1042 113" stroke="#ef3345" stroke-width="1.3"/>
+    <path d="M1008 93 C985 98 965 106 946 119" stroke="#8f3038" stroke-width="1"/>
+    <path d="M1027 113 C1002 120 982 131 964 146" stroke="#8f3038" stroke-width="1"/>
+    <path d="M1048 133 C1027 144 1012 158 999 176" stroke="#8f3038" stroke-width="1"/>
+  </g>
+  <text x="1137" y="302" text-anchor="end" fill="#66585b" font-family="monospace" font-size="11" letter-spacing="2">EDWIN CHEN / 2026</text>
+</svg>

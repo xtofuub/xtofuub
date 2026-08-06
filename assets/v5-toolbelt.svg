@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 238" role="img" aria-label="Toolbelt">
+  <rect x="1" y="1" width="1198" height="236" rx="18" fill="#08090b" stroke="#2b2f34" stroke-width="2"/>
+  <text x="44" y="42" fill="#ef3345" font-family="monospace" font-size="13" letter-spacing="2">04 / TOOLBELT</text>
+  <text x="44" y="91" fill="#eadfd3" font-family="Georgia, serif" font-size="34">Tools I reach for.</text>
+  <text x="44" y="122" fill="#9d948c" font-family="Arial, sans-serif" font-size="11" letter-spacing="1.8">TOOLS I ACTUALLY REACH FOR</text>
+  <line x1="400" y1="28" x2="400" y2="210" stroke="#34383d"/>
+  <line x1="600" y1="46" x2="600" y2="200" stroke="#24282c"/>
+  <line x1="800" y1="46" x2="800" y2="200" stroke="#24282c"/>
+  <line x1="1000" y1="46" x2="1000" y2="200" stroke="#24282c"/>
+  <text x="438" y="66" fill="#ef3345" font-family="monospace" font-size="12" letter-spacing="2">CODE</text>
+  <text x="438" y="100" fill="#eadfd3" font-family="Georgia, serif" font-size="18">Python</text>
+  <text x="438" y="129" fill="#eadfd3" font-family="Georgia, serif" font-size="18">TypeScript</text>
+  <text x="438" y="158" fill="#eadfd3" font-family="Georgia, serif" font-size="18">PowerShell</text>
+  <text x="438" y="187" fill="#eadfd3" font-family="Georgia, serif" font-size="18">Bash</text>
+  <text x="638" y="66" fill="#ef3345" font-family="monospace" font-size="12" letter-spacing="2">RESEARCH</text>
+  <text x="638" y="100" fill="#eadfd3" font-family="Georgia, serif" font-size="18">Frida</text>
+  <text x="638" y="129" fill="#eadfd3" font-family="Georgia, serif" font-size="18">Ghidra</text>
+  <text x="638" y="158" fill="#eadfd3" font-family="Georgia, serif" font-size="18">radare2</text>
+  <text x="638" y="187" fill="#eadfd3" font-family="Georgia, serif" font-size="18">YARA</text>
+  <text x="838" y="66" fill="#ef3345" font-family="monospace" font-size="12" letter-spacing="2">PRODUCT</text>
+  <text x="838" y="100" fill="#eadfd3" font-family="Georgia, serif" font-size="18">React</text>
+  <text x="838" y="129" fill="#eadfd3" font-family="Georgia, serif" font-size="18">Next.js</text>
+  <text x="838" y="158" fill="#eadfd3" font-family="Georgia, serif" font-size="18">Node.js</text>
+  <text x="838" y="187" fill="#eadfd3" font-family="Georgia, serif" font-size="18">Supabase</text>
+  <text x="1038" y="66" fill="#ef3345" font-family="monospace" font-size="12" letter-spacing="2">SYSTEMS</text>
+  <text x="1038" y="100" fill="#eadfd3" font-family="Georgia, serif" font-size="18">Linux</text>
+  <text x="1038" y="129" fill="#eadfd3" font-family="Georgia, serif" font-size="18">Docker</text>
+  <text x="1038" y="158" fill="#eadfd3" font-family="Georgia, serif" font-size="18">Azure</text>
+  <text x="1038" y="187" fill="#eadfd3" font-family="Georgia, serif" font-size="18">Active Directory</text>
+</svg>
