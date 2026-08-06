@@ -86,7 +86,13 @@ Solve real friction and keep the interface simple.
 
 <div align="center">
 
-`Python` · `TypeScript` · `Frida` · `Ghidra` · `YARA` · `PowerShell` · `React` · `Next.js` · `Burp Suite` · `Wireshark` · `Linux` · `Docker`
+`Python` · `TypeScript` · `JavaScript` · `PowerShell` · `PHP` · `SQL` · `Bash`
+
+`Frida` · `Ghidra` · `radare2` · `YARA` · `Sigma` · `Burp Suite` · `Wireshark` · `Nmap` · `Nuclei` · `ffuf` · `mitmproxy`
+
+`React` · `Next.js` · `Node.js` · `Flask` · `Tailwind CSS` · `shadcn/ui` · `Supabase` · `Vercel`
+
+`Linux` · `Windows` · `iOS` · `Docker` · `Git` · `Azure` · `Active Directory` · `MySQL` · `Kali Linux`
 
 </div>
 
@@ -94,10 +100,14 @@ Solve real friction and keep the interface simple.
 
 <div align="center">
 
-[**TryHackMe ↗**](https://tryhackme.com/p/tofuub) &nbsp;&nbsp;·&nbsp;&nbsp; [**Starred repositories ↗**](https://github.com/xtofuub?tab=stars)
+[**TryHackMe ↗**](https://tryhackme.com/p/tofuub) &nbsp;&nbsp;·&nbsp;&nbsp; [**More projects ↗**](https://github.com/xtofuub?tab=repositories)
 
 <br>
 
-<sub><em>Starred repositories tell the rest of the story.</em></sub>
+<sub><em>There are more projects across my repositories.</em></sub>
 
 </div>
+
+<br>
+
+<img src="footer-banner.svg" width="100%" alt="More projects in my repositories" />
