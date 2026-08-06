@@ -1,152 +1,72 @@
-<svg width="100%" viewBox="0 0 900 220" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Edwin Chen — reverse engineering, security tooling, practical research</title>
+  <desc id="desc">Dark editorial banner with cream typography, red accents, and an abstract red-lit hand.</desc>
   <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
-      .bg { fill: #080808; }
-      .grid-line { stroke: #1a0000; stroke-width: 0.5; }
-      .name-text {
-        font-family: 'Share Tech Mono', 'Courier New', monospace;
-        font-size: 62px;
-        font-weight: bold;
-        fill: #f0f0f0;
-        letter-spacing: 12px;
-      }
-      .sub-text {
-        font-family: 'Share Tech Mono', 'Courier New', monospace;
-        font-size: 13px;
-        fill: #cc0000;
-        letter-spacing: 3px;
-      }
-      .prompt {
-        font-family: 'Share Tech Mono', 'Courier New', monospace;
-        font-size: 11px;
-        fill: #661111;
-        letter-spacing: 1px;
-      }
-      .accent-text {
-        font-family: 'Share Tech Mono', 'Courier New', monospace;
-        font-size: 10px;
-        fill: #3a0000;
-        letter-spacing: 1.5px;
-      }
-      .corner { stroke: #cc0000; stroke-width: 2; fill: none; }
-      .scanAnim { animation: scan 4s linear infinite; }
-      @keyframes scan {
-        0%   { transform: translateY(-220px); }
-        100% { transform: translateY(440px); }
-      }
-      .flicker { animation: flicker 7s ease-in-out infinite; }
-      @keyframes flicker {
-        0%,88%,100% { opacity:1; }
-        89% { opacity:0.3; }
-        90% { opacity:1; }
-        92% { opacity:0.2; }
-        93% { opacity:1; }
-      }
-      .blink { animation: blink 1.1s step-start infinite; }
-      @keyframes blink {
-        0%,100% { opacity:1; }
-        50% { opacity:0; }
-      }
-      .pulse1 { animation: pulse 2s 0s ease-in-out infinite; }
-      .pulse2 { animation: pulse 2s 0.4s ease-in-out infinite; }
-      .pulse3 { animation: pulse 2s 0.8s ease-in-out infinite; }
-      @keyframes pulse {
-        0%,100% { opacity:0.2; }
-        50% { opacity:1; }
-      }
-      .glitch { animation: glitch 9s linear infinite; }
-      @keyframes glitch {
-        0%,93%,100% { transform:translate(0,0); }
-        94% { transform:translate(-3px,1px); }
-        95% { transform:translate(3px,-1px); }
-        96% { transform:translate(0,2px); }
-        97% { transform:translate(-2px,0); }
-      }
-      .sidepulse { animation: sidepulse 3s ease-in-out infinite; }
-      @keyframes sidepulse {
-        0%,100% { opacity:0.4; }
-        50% { opacity:1; }
-      }
-    </style>
-    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#cc0000" stop-opacity="0"/>
-      <stop offset="50%"  stop-color="#cc0000" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#cc0000" stop-opacity="0"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.62" stop-color="#090707"/>
+      <stop offset="1" stop-color="#120606"/>
     </linearGradient>
-    <clipPath id="clip">
-      <rect x="0" y="0" width="900" height="220"/>
-    </clipPath>
+    <radialGradient id="glow" cx="80%" cy="36%" r="48%">
+      <stop offset="0" stop-color="#b20f1a" stop-opacity="0.32"/>
+      <stop offset="0.48" stop-color="#6f0710" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#210507"/>
+      <stop offset="0.35" stop-color="#6f0911"/>
+      <stop offset="0.7" stop-color="#d52532"/>
+      <stop offset="1" stop-color="#52060b"/>
+    </linearGradient>
+    <filter id="redGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.4  0 0.15 0 0 0  0 0 0.15 0 0  0 0 0 0.9 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="11" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.055"/></feComponentTransfer>
+    </filter>
+    <clipPath id="rounded"><rect x="1" y="1" width="1198" height="358" rx="22"/></clipPath>
   </defs>
 
-  <rect class="bg" x="0" y="0" width="900" height="220"/>
+  <g clip-path="url(#rounded)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <rect width="1200" height="360" fill="url(#glow)"/>
 
-  <!-- Grid -->
-  <line class="grid-line" x1="0"   y1="44"  x2="900" y2="44"/>
-  <line class="grid-line" x1="0"   y1="88"  x2="900" y2="88"/>
-  <line class="grid-line" x1="0"   y1="132" x2="900" y2="132"/>
-  <line class="grid-line" x1="0"   y1="176" x2="900" y2="176"/>
-  <line class="grid-line" x1="90"  y1="0"   x2="90"  y2="220"/>
-  <line class="grid-line" x1="180" y1="0"   x2="180" y2="220"/>
-  <line class="grid-line" x1="270" y1="0"   x2="270" y2="220"/>
-  <line class="grid-line" x1="360" y1="0"   x2="360" y2="220"/>
-  <line class="grid-line" x1="450" y1="0"   x2="450" y2="220"/>
-  <line class="grid-line" x1="540" y1="0"   x2="540" y2="220"/>
-  <line class="grid-line" x1="630" y1="0"   x2="630" y2="220"/>
-  <line class="grid-line" x1="720" y1="0"   x2="720" y2="220"/>
-  <line class="grid-line" x1="810" y1="0"   x2="810" y2="220"/>
+    <path d="M-70 236 C270 252 490 207 671 94 C785 23 866 -14 990 -48" fill="none" stroke="#b41622" stroke-width="1.4" opacity="0.76"/>
+    <circle cx="335" cy="232" r="3.5" fill="#e1303e"/>
+    <path d="M76 291 H218" stroke="#e1303e" stroke-width="3"/>
 
-  <!-- Scan line -->
-  <rect clip-path="url(#clip)" class="scanAnim" x="0" y="0" width="900" height="80" fill="url(#scanGrad)"/>
+    <g opacity="0.46" fill="#c31f2c">
+      <circle cx="806" cy="56" r="1.4"/><circle cx="839" cy="78" r="1.1"/><circle cx="875" cy="44" r="1.3"/>
+      <circle cx="907" cy="93" r="1.1"/><circle cx="952" cy="58" r="1.5"/><circle cx="1006" cy="111" r="1.2"/>
+      <circle cx="1047" cy="70" r="1.2"/><circle cx="1090" cy="125" r="1.4"/><circle cx="1135" cy="93" r="1.1"/>
+      <circle cx="820" cy="140" r="1.1"/><circle cx="895" cy="151" r="1.4"/><circle cx="972" cy="160" r="1.1"/>
+    </g>
 
-  <!-- Edges -->
-  <rect x="0"   y="0" width="900" height="3"   fill="#cc0000"/>
-  <rect x="0"   y="217" width="900" height="3" fill="#550000"/>
-  <rect x="0"   y="0" width="3"   height="220" fill="#1a0000"/>
-  <rect x="897" y="0" width="3"   height="220" fill="#1a0000"/>
+    <g transform="translate(885,-18) rotate(8 170 120)" filter="url(#redGlow)">
+      <path d="M35 40 C92 18 173 15 255 28 C307 36 338 60 360 89 C315 104 280 124 246 143 C199 169 149 183 92 178 C59 175 36 158 30 134 C25 111 30 76 35 40 Z" fill="url(#hand)" opacity="0.92"/>
+      <ellipse cx="212" cy="152" rx="84" ry="58" fill="url(#hand)" transform="rotate(-16 212 152)"/>
+      <path d="M248 166 C284 183 307 218 307 263" fill="none" stroke="url(#hand)" stroke-width="31" stroke-linecap="round"/>
+      <path d="M228 176 C253 205 263 237 257 286" fill="none" stroke="url(#hand)" stroke-width="28" stroke-linecap="round"/>
+      <path d="M205 180 C219 217 217 250 202 294" fill="none" stroke="url(#hand)" stroke-width="26" stroke-linecap="round"/>
+      <path d="M181 179 C183 214 173 244 151 278" fill="none" stroke="url(#hand)" stroke-width="24" stroke-linecap="round"/>
+      <path d="M162 161 C143 190 124 204 96 214" fill="none" stroke="url(#hand)" stroke-width="27" stroke-linecap="round"/>
+      <path d="M105 43 C170 34 239 42 299 65" fill="none" stroke="#ff5965" stroke-width="2.3" opacity="0.46"/>
+    </g>
 
-  <!-- Side accent bars -->
-  <rect class="sidepulse" x="10" y="60" width="2" height="100" fill="#cc0000"/>
-  <rect x="10" y="60"  width="8" height="2" fill="#cc0000"/>
-  <rect x="10" y="158" width="8" height="2" fill="#cc0000"/>
-  <rect class="sidepulse" x="888" y="60" width="2" height="100" fill="#cc0000"/>
-  <rect x="882" y="60"  width="8" height="2" fill="#cc0000"/>
-  <rect x="882" y="158" width="8" height="2" fill="#cc0000"/>
+    <text x="72" y="151" fill="#f4eee7" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="600" letter-spacing="-3">Edwin</text>
+    <text x="315" y="151" fill="#ead8d3" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-style="italic" font-weight="400" letter-spacing="-4">Chen</text>
+    <text x="76" y="202" fill="#e1323e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="25" letter-spacing="3">@xtofuub</text>
+    <text x="76" y="259" fill="#bdb4ae" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3.2">REVERSE ENGINEERING</text>
+    <circle cx="292" cy="254" r="3" fill="#e1323e"/>
+    <text x="310" y="259" fill="#bdb4ae" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3.2">SECURITY TOOLING</text>
+    <circle cx="512" cy="254" r="3" fill="#e1323e"/>
+    <text x="530" y="259" fill="#bdb4ae" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3.2">PRACTICAL RESEARCH</text>
 
-  <!-- Corner brackets -->
-  <polyline class="corner" points="28,44 28,22 50,22"/>
-  <polyline class="corner" points="872,44 872,22 850,22"/>
-  <polyline class="corner" points="28,176 28,198 50,198"/>
-  <polyline class="corner" points="872,176 872,198 850,198"/>
-
-  <!-- Top bar text -->
-  <text class="prompt" x="58" y="15">root@xtofuub:~$</text>
-  <text class="accent-text" x="210" y="15">// initializing profile...</text>
-
-  <!-- Pulse dots -->
-  <circle class="pulse1" cx="810" cy="13" r="3" fill="#cc0000"/>
-  <circle class="pulse2" cx="824" cy="13" r="3" fill="#cc0000"/>
-  <circle class="pulse3" cx="838" cy="13" r="3" fill="#cc0000"/>
-
-  <!-- Name glow -->
-  <text class="name-text" x="450" y="126" text-anchor="middle" fill="#cc0000" opacity="0.07" font-size="68px" letter-spacing="14px">XTOFUUB</text>
-
-  <!-- Main name -->
-  <g class="flicker">
-    <text class="name-text glitch" x="450" y="126" text-anchor="middle">XTOFUUB</text>
+    <rect width="1200" height="360" filter="url(#grain)" opacity="0.8"/>
   </g>
-
-  <!-- Subtitle dividers -->
-  <line x1="30"  y1="148" x2="220" y2="148" stroke="#2a0000" stroke-width="0.8"/>
-  <line x1="680" y1="148" x2="870" y2="148" stroke="#2a0000" stroke-width="0.8"/>
-
-  <!-- Subtitle -->
-  <text class="sub-text" x="450" y="162" text-anchor="middle">SECURITY  //  REVERSE ENGINEERING  //  BUILDER</text>
-
-  <!-- Bottom bar -->
-  <text class="prompt" x="30" y="208">[ COMPUTER ENGINEERING ]</text>
-  <text class="accent-text" x="460" y="208">KALI  ·  PYTHON  ·  POWERSHELL  ·  BURP SUITE</text>
-
-  <!-- Blinking cursor -->
-  <rect class="blink" x="856" y="197" width="9" height="13" fill="#cc0000"/>
+  <rect x="1" y="1" width="1198" height="358" rx="22" fill="none" stroke="#3b3030" stroke-width="2"/>
 </svg>
