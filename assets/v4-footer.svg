@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 150" role="img" aria-label="More projects">
+<rect x="1" y="1" width="1198" height="148" rx="18" fill="#08090b" stroke="#2b2f34" stroke-width="2"/>
+<path d="M-20 120 C250 138 420 38 610 62 C820 87 960 145 1220 104" fill="none" stroke="#4a171c" stroke-width="1.2"/><text x="600" y="65" text-anchor="middle" fill="#eadfd3" font-family="Georgia,serif" font-size="34" font-style="italic">There are more projects across my repositories.</text><text x="600" y="95" text-anchor="middle" fill="#9d948c" font-family="monospace" font-size="13" letter-spacing="3">RESEARCH • TOOLING • EXPERIMENTS • BUILDS</text><text x="55" y="132" fill="#ef3345" font-family="monospace" font-size="13" letter-spacing="2">/ MORE WORK</text><text x="1145" y="132" text-anchor="end" fill="#ef3345" font-family="monospace" font-size="13" letter-spacing="2">XTOFUUB /</text>
+</svg>
