@@ -1,20 +1,51 @@
-<p align="center"><img src="./assets/new_banner.svg" width="100%" alt="Edwin Chen — reverse engineering, security tooling and practical research" /></p>
-
-<p align="center"><img src="./assets/v5-intro.svg" width="100%" alt="Building practical security tools and studying how systems break" /></p>
-
-<p align="center"><img src="./assets/v5-current-signal.svg" width="100%" alt="Current Signal" /></p>
-
-<p align="center"><img src="./assets/v5-lab-notes.svg" width="100%" alt="Lab Notes" /></p>
-
-<p align="center"><img src="./assets/v5-operating-principles.svg" width="100%" alt="Operating Principles" /></p>
-
-<p align="center"><img src="./assets/v5-toolbelt.svg" width="100%" alt="Toolbelt" /></p>
-
-<p align="center"><img src="./assets/v5-elsewhere.svg" width="100%" alt="Elsewhere" /></p>
-
 <p align="center">
-  <a href="https://tryhackme.com/p/tofuub"><img src="https://raw.githubusercontent.com/xtofuub/xtofuub/main/assets/v5-tryhackme.svg" width="49%" alt="TryHackMe" /></a>
-  <a href="https://github.com/xtofuub?tab=repositories"><img src="https://raw.githubusercontent.com/xtofuub/xtofuub/main/assets/v5-projects.svg" width="49%" alt="More projects" /></a>
+  <img src="./assets/profile-header.svg" width="100%" alt="Software, security, reverse engineering and tooling" />
 </p>
 
-<p align="center"><img src="./assets/v4-footer.svg" width="100%" alt="There are more projects across my repositories" /></p>
+<br>
+
+### about
+
+I like taking systems apart to understand how they work — then turning what I learn into useful software.
+
+Most of my time goes into **reverse engineering**, **security research**, **software development**, and building small tools that solve real problems.
+
+`reverse engineering` &nbsp; `security` &nbsp; `software` &nbsp; `tooling` &nbsp; `automation`
+
+<br>
+
+<table width="100%">
+<tr>
+<td width="33%" valign="top">
+
+**01 / UNDERSTAND**
+
+Look below the abstraction and figure out what is actually happening.
+
+</td>
+<td width="33%" valign="top">
+
+**02 / BUILD**
+
+Turn the useful parts into focused software instead of oversized systems.
+
+</td>
+<td width="33%" valign="top">
+
+**03 / LEARN**
+
+Keep moving into unfamiliar systems, tools, formats and protocols.
+
+</td>
+</tr>
+</table>
+
+<br>
+
+### activity
+
+<p align="center">
+  <img src="./assets/profile-stats.svg" width="100%" alt="Automatically updated GitHub activity" />
+</p>
+
+<sub>The activity panel is generated automatically from GitHub and refreshed daily. It contains no manually entered personal profile details.</sub>
