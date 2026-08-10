@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Profile header</title>
+  <desc id="desc">Minimal monochrome profile banner focused on software, security, and systems.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#202020" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="0.42" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" fill="#050505"/>
+  <rect width="1200" height="360" fill="url(#grid)" opacity="0.48"/>
+  <rect width="620" height="360" fill="url(#fade)"/>
+
+  <g fill="none" stroke="#f4f4f4" stroke-width="1">
+    <path d="M40 44H178"/>
+    <path d="M1022 44H1160V92"/>
+    <path d="M40 316H180"/>
+    <path d="M1020 316H1160"/>
+  </g>
+
+  <g fill="#8d8d8d" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" letter-spacing="2">
+    <text x="40" y="78">PROFILE / 001</text>
+    <text x="946" y="78">MONOCHROME SYSTEM</text>
+  </g>
+
+  <g fill="#f5f5f5" font-family="Arial, Helvetica, sans-serif">
+    <text x="40" y="164" font-size="58" font-weight="700" letter-spacing="-2">UNDERSTAND SYSTEMS.</text>
+    <text x="40" y="226" font-size="58" font-weight="700" letter-spacing="-2">BUILD USEFUL THINGS.</text>
+  </g>
+
+  <g fill="#a7a7a7" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" letter-spacing="1">
+    <text x="42" y="278">software · security · reverse engineering · tooling</text>
+  </g>
+
+  <g transform="translate(986 132)" fill="none" stroke="#8a8a8a">
+    <circle cx="70" cy="70" r="61" stroke-width="1"/>
+    <circle cx="70" cy="70" r="38" stroke-width="1" opacity="0.65"/>
+    <path d="M0 70H140M70 0V140" opacity="0.45"/>
+    <path d="M17 32L123 108M17 108L123 32" opacity="0.25"/>
+    <circle cx="70" cy="70" r="4" fill="#f5f5f5" stroke="none"/>
+  </g>
+</svg>
