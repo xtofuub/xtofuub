@@ -47,5 +47,3 @@ Keep moving into unfamiliar systems, tools, formats and protocols.
 <p align="center">
   <img src="./assets/profile-stats.svg" width="100%" alt="Automatically updated GitHub activity" />
 </p>
-
-<sub>The activity panel is generated automatically from GitHub and refreshed daily. It contains no manually entered personal profile details.</sub>
