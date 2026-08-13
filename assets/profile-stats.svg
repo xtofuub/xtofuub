@@ -9,32 +9,41 @@
   .big { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #101010; }
   .mid { font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-weight: 750; fill: #101010; }
   .card { fill: #f7f7f4; stroke: #bdbdb8; stroke-width: 1; }
-</style>
-<rect width="290" height="820" fill="#090909"/>
+</style><defs>
+<linearGradient id="railSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1a1a"/><stop offset=".55" stop-color="#0d0d0d"/><stop offset="1" stop-color="#050505"/></linearGradient>
+<linearGradient id="railConcrete" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d0d0cd"/><stop offset=".42" stop-color="#a1a19e"/><stop offset="1" stop-color="#60605e"/></linearGradient>
+<filter id="railGrain" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".82" numOctaves="3" seed="13"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .14"/></feComponentTransfer></filter>
+<clipPath id="railFace"><path d="M94 118L214 152L214 820H72L80 246Z"/></clipPath>
+</defs>
+<rect width="290" height="820" fill="url(#railSky)"/>
 <rect x="290" width="910" height="820" fill="#f3f3f0"/>
-
-<!-- architectural continuation -->
-<path d="M0 0H290V820H0Z" fill="#0b0b0b"/>
-<path d="M42 0H226L290 86V820H88L42 734Z" fill="#222"/>
-<path d="M88 0H226V820H88Z" fill="#181818"/>
-<g stroke="#6d6d6d" stroke-width="1" opacity=".5"><path d="M112 0V820M144 0V820M176 0V820M208 0V820"/><path d="M88 84H226M88 168H226M88 252H226M88 336H226M88 420H226M88 504H226M88 588H226M88 672H226M88 756H226"/></g>
-<g fill="#c8c8c5" opacity=".28"><rect x="101" y="104" width="20" height="35"/><rect x="145" y="104" width="20" height="35"/><rect x="189" y="104" width="20" height="35"/><rect x="101" y="188" width="20" height="35"/><rect x="145" y="188" width="20" height="35"/><rect x="189" y="188" width="20" height="35"/><rect x="101" y="440" width="20" height="35"/><rect x="145" y="440" width="20" height="35"/><rect x="189" y="440" width="20" height="35"/></g>
-<path d="M24 44V776M24 44H31M24 776H31" stroke="#d0d0cc"/>
-<g transform="translate(28 744) rotate(-90)" class="mono" fill="#d0d0cc" font-size="11" letter-spacing="4"><text>ACTIVITY · SIGNAL · OUTPUT</text></g>
-
+<rect width="290" height="820" filter="url(#railGrain)" opacity=".27"/>
+<path d="M0 820V226L87 145L96 111L215 142L290 235V820Z" fill="#070707"/>
+<path d="M0 226L87 145L96 111L215 142L290 235L282 249L207 171L108 143L95 233L0 299Z" fill="#0e0e0e"/>
+<path d="M88 149L100 115L215 145L282 236L274 243L206 171L105 144L96 159Z" fill="#ecece8"/>
+<path d="M94 118L214 152L214 820H72L80 246Z" fill="url(#railConcrete)"/>
+<path d="M214 152L290 242V820H214Z" fill="#090909"/>
+<path d="M72 820L80 246L94 118L106 144L98 260L94 820Z" fill="#222" opacity=".5"/>
+<path d="M101 336L173 356V517L98 498Z" fill="#0b0b0b"/>
+<g opacity=".67" stroke="#4b4b49"><path d="M110 339V501"/><path d="M122 342V504"/><path d="M134 346V507"/><path d="M146 349V510"/><path d="M158 352V513"/></g>
+<g clip-path="url(#railFace)" stroke="#686865" stroke-width=".6" opacity=".4"><path d="M86 208L214 242"/><path d="M82 281L214 314"/><path d="M80 354L214 386"/><path d="M78 427L214 458"/><path d="M77 500L214 530"/><path d="M76 573L214 602"/><path d="M74 646L214 674"/><path d="M73 719L214 746"/><path d="M122 124L106 820"/><path d="M164 136L158 820"/></g>
+<rect x="72" y="112" width="148" height="708" filter="url(#railGrain)" opacity=".16" clip-path="url(#railFace)"/>
+<path d="M24 32V780M24 32H31M24 780H31" stroke="#e0e0dc"/>
+<circle cx="24" cy="132" r="4" fill="none" stroke="#e0e0dc"/><path d="M17 132H31M24 125V139" stroke="#e0e0dc" opacity=".8"/>
+<g transform="translate(30 765) rotate(-90)" class="mono" fill="#d8d8d4" font-size="10" letter-spacing="4"><text>ACTIVITY · SIGNAL · OUTPUT</text></g>
 <circle cx="340" cy="45" r="4" fill="#111"/><text class="label" x="360" y="50">02 — ACTIVITY / LIVE</text><text class="sub" x="1055" y="50">2026-08-13</text><path d="M340 70H1148" stroke="#8f8f8b"/>
 <text class="mid" x="340" y="122">ACTIVITY</text>
 
 <rect class="card" x="340" y="145" width="808" height="140" rx="2"/>
 <text class="label" x="365" y="172">GITHUB OVERVIEW</text>
 <g transform="translate(368 190)"><text class="label">REPOSITORIES</text><text class="big" y="48">34</text><text class="sub" y="74">public · non-fork</text></g>
-<g transform="translate(523 190)"><text class="label">CONTRIBUTIONS</text><text class="big" y="48">1.0k</text><text class="sub" y="74">last 12 months</text></g>
+<g transform="translate(523 190)"><text class="label">CONTRIBUTIONS</text><text class="big" y="48">1.1k</text><text class="sub" y="74">last 12 months</text></g>
 <g transform="translate(678 190)"><text class="label">COMMITS</text><text class="big" y="48">1.0k</text><text class="sub" y="74">last 12 months</text></g>
-<g transform="translate(833 190)"><text class="label">PULL REQUESTS</text><text class="big" y="48">7</text><text class="sub" y="74">last 12 months</text></g>
+<g transform="translate(833 190)"><text class="label">PULL REQUESTS</text><text class="big" y="48">8</text><text class="sub" y="74">last 12 months</text></g>
 <g transform="translate(988 190)"><text class="label">STARS</text><text class="big" y="48">19</text><text class="sub" y="74">public repositories</text></g>
 
 <rect class="card" x="340" y="310" width="550" height="250" rx="2"/>
-<text class="label" x="365" y="340">CONTRIBUTION GRAPH</text><text class="sub" x="365" y="358">last 52 weeks · 1.0k contributions / 12m</text>
+<text class="label" x="365" y="340">CONTRIBUTION GRAPH</text><text class="sub" x="365" y="358">last 52 weeks · 1.1k contributions / 12m</text>
 <rect x="355" y="420" width="7" height="7" rx="1" fill="#deded9"/>
 <rect x="355" y="430" width="7" height="7" rx="1" fill="#bdbdb8"/>
 <rect x="355" y="440" width="7" height="7" rx="1" fill="#bdbdb8"/>
@@ -414,7 +423,7 @@
 <rect class="card" x="755" y="585" width="393" height="195" rx="2"/>
 <text class="label" x="780" y="615">12M SIGNAL</text>
 <g><text class="sub" x="780" y="652">ACTIVE DAYS</text><text class="big" x="780" y="687">93</text></g>
-<g><text class="sub" x="950" y="652">AVG / ACTIVE DAY</text><text class="big" x="950" y="687">11.2</text></g>
+<g><text class="sub" x="950" y="652">AVG / ACTIVE DAY</text><text class="big" x="950" y="687">11.3</text></g>
 <path d="M780 712H1123" stroke="#d0d0cb"/>
 <text class="sub" x="780" y="742">ISSUES / 12M</text><text class="body" x="880" y="742">2</text><text class="sub" x="950" y="742">TOP LANGUAGE</text><text class="body" x="1123" y="742" text-anchor="end">Python</text>
 <text class="sub" x="340" y="808">source: GitHub GraphQL · generated 2026-08-13</text>
