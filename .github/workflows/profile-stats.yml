@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - 'scripts/generate-profile-stats.mjs'
+      - 'scripts/refine-profile-layout.mjs'
       - '.github/workflows/profile-stats.yml'
 
 permissions:
@@ -27,7 +28,9 @@ jobs:
           node-version: '20'
 
       - name: Generate live SVG
-        run: node scripts/generate-profile-stats.mjs
+        run: |
+          node scripts/generate-profile-stats.mjs
+          node scripts/refine-profile-layout.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
