@@ -214,7 +214,7 @@ const topLanguage = topLanguages[0]?.name || '—';
 
 const lastWeeks = calendar.weeks.slice(-52);
 const maxCount = Math.max(1, ...lastWeeks.flatMap((week) => week.contributionDays.map((day) => day.contributionCount)));
-const levels = ['#e0e0dc', '#bfbfba', '#8d8d88', '#565653', '#111111'];
+const levels = ['#171719', '#29292d', '#505056', '#8a8a91', '#f1f1ef'];
 const cells = [];
 const cell = 10;
 const gap = 4;
@@ -242,10 +242,10 @@ const overviewMarkup = overview.map(([label, value, sub], i) => {
   const gap = 16;
   const x = 42 + i * (width + gap);
   return `<g transform="translate(${x} 92)">
-    <rect width="${width}" height="150" rx="2" fill="#f8f8f5" stroke="#bcbcb7"/>
+    <rect width="${width}" height="150" rx="4" fill="#0f0f11" stroke="#2c2c30"/>
     <text class="label" x="18" y="29">${esc(label)}</text>
     <text class="big" x="18" y="82">${esc(value)}</text>
-    <path d="M18 105H192" stroke="#d1d1cc"/>
+    <path d="M18 105H192" stroke="#26262a"/>
     <text class="sub" x="18" y="128">${esc(sub)}</text>
   </g>`;
 }).join('\n');
@@ -256,8 +256,8 @@ const languageMarkup = topLanguages.map((lang, i) => {
   const width = Math.max(0, Math.min(230, (percent / 100) * 230));
   return `<g>
     <text class="body" x="68" y="${y}">${esc(lang.name)}</text>
-    <rect x="190" y="${y - 9}" width="230" height="8" rx="4" fill="#ddddD8"/>
-    <rect x="190" y="${y - 9}" width="${width}" height="8" rx="4" fill="#1b1b1b"/>
+    <rect x="190" y="${y - 9}" width="230" height="8" rx="4" fill="#242428"/>
+    <rect x="190" y="${y - 9}" width="${width}" height="8" rx="4" fill="#d8d8d6"/>
     <text class="sub" x="442" y="${y}" text-anchor="end">${percent}%</text>
   </g>`;
 }).join('\n');
@@ -268,8 +268,8 @@ const recentMarkup = recent.length
       const y = 627 + i * 47;
       const line = eventLine(event);
       return `<g>
-        <circle cx="548" cy="${y - 4}" r="4" fill="#f4f4f1" stroke="#222"/>
-        ${i < recent.length - 1 ? `<path d="M548 ${y}V${y + 43}" stroke="#bdbdb8"/>` : ''}
+        <circle cx="548" cy="${y - 4}" r="4" fill="#0b0b0d" stroke="#bdbdc2"/>
+        ${i < recent.length - 1 ? `<path d="M548 ${y}V${y + 43}" stroke="#303035"/>` : ''}
         <text class="body" x="570" y="${y}">${esc(shorten(line.title, 58))}</text>
         <text class="sub" x="570" y="${y + 19}">${esc(shorten(line.detail, 66))}</text>
         <text class="sub" x="1125" y="${y}" text-anchor="end">${esc(timeAgo(event.created_at))}</text>
@@ -301,22 +301,22 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1010" 
 <desc id="desc">Automatically generated public GitHub repository, contribution, commit, pull request, star, streak, language and recent activity statistics.</desc>
 <style>
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-  .label { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; letter-spacing: 1px; fill: #20201e; }
-  .sub { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; fill: #747470; }
-  .body { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #30302e; }
-  .big { font-family: Arial, Helvetica, sans-serif; font-size: 37px; font-weight: 700; fill: #0e0e0d; }
-  .smallBig { font-family: Arial, Helvetica, sans-serif; font-size: 29px; font-weight: 700; fill: #0e0e0d; }
-  .title { font-family: Arial, Helvetica, sans-serif; font-size: 46px; font-weight: 800; fill: #0e0e0d; letter-spacing: 2px; }
-  .card { fill: #f8f8f5; stroke: #bcbcb7; stroke-width: 1; }
+  .label { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; letter-spacing: 1px; fill: #d9d9dc; }
+  .sub { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; fill: #85858c; }
+  .body { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #bebec3; }
+  .big { font-family: Arial, Helvetica, sans-serif; font-size: 37px; font-weight: 700; fill: #f4f4f2; }
+  .smallBig { font-family: Arial, Helvetica, sans-serif; font-size: 29px; font-weight: 700; fill: #f4f4f2; }
+  .card { fill: #0f0f11; stroke: #2c2c30; stroke-width: 1; }
 </style>
-<rect width="1200" height="1010" fill="#f4f4f1"/>
-<path d="M42 38H1158" stroke="#777773"/>
-<circle cx="42" cy="61" r="4" fill="#111"/>
+<rect width="1200" height="1010" fill="#080809"/>
+<rect x="1" y="1" width="1198" height="1008" rx="8" fill="none" stroke="#252529"/>
+<path d="M42 38H1158" stroke="#343438"/>
+<circle cx="42" cy="61" r="4" fill="#f1f1ef"/>
 <text class="label" x="60" y="65">ACTIVITY / LIVE</text>
 <text class="sub" x="1158" y="65" text-anchor="end">${esc(updated)}</text>
 ${overviewMarkup}
 
-<rect class="card" x="42" y="265" width="1116" height="270" rx="2"/>
+<rect class="card" x="42" y="265" width="1116" height="270" rx="4"/>
 <text class="label" x="66" y="298">CONTRIBUTIONS / LAST 52 WEEKS</text>
 <text class="sub" x="66" y="319">${compact(totalContributions)} contributions in the last 12 months</text>
 <text class="sub" x="54" y="377">MON</text>
@@ -325,26 +325,26 @@ ${overviewMarkup}
 ${cells.join('\n')}
 <g class="sub">
   <text x="860" y="486">LESS</text>
-  <rect x="900" y="478" width="10" height="10" rx="1" fill="#e0e0dc"/>
-  <rect x="916" y="478" width="10" height="10" rx="1" fill="#bfbfba"/>
-  <rect x="932" y="478" width="10" height="10" rx="1" fill="#8d8d88"/>
-  <rect x="948" y="478" width="10" height="10" rx="1" fill="#565653"/>
-  <rect x="964" y="478" width="10" height="10" rx="1" fill="#111111"/>
+  <rect x="900" y="478" width="10" height="10" rx="1" fill="#171719"/>
+  <rect x="916" y="478" width="10" height="10" rx="1" fill="#29292d"/>
+  <rect x="932" y="478" width="10" height="10" rx="1" fill="#505056"/>
+  <rect x="948" y="478" width="10" height="10" rx="1" fill="#8a8a91"/>
+  <rect x="964" y="478" width="10" height="10" rx="1" fill="#f1f1ef"/>
   <text x="982" y="486">MORE</text>
 </g>
 
-<rect class="card" x="42" y="558" width="448" height="286" rx="2"/>
+<rect class="card" x="42" y="558" width="448" height="286" rx="4"/>
 <text class="label" x="68" y="590">TOP LANGUAGES</text>
 <text class="sub" x="442" y="590" text-anchor="end">public repository bytes</text>
 ${languageMarkup}
 
-<rect class="card" x="512" y="558" width="646" height="286" rx="2"/>
+<rect class="card" x="512" y="558" width="646" height="286" rx="4"/>
 <text class="label" x="538" y="590">RECENT PUBLIC ACTIVITY</text>
 ${recentMarkup}
 
-<path d="M42 856H1158" stroke="#bcbcb7"/>
+<path d="M42 856H1158" stroke="#2f2f33"/>
 ${bottomMarkup}
-<path d="M42 970H1158" stroke="#777773"/>
+<path d="M42 970H1158" stroke="#343438"/>
 <text class="sub" x="42" y="992">TOP LANGUAGE · ${esc(topLanguage)}</text>
 <text class="sub" x="1158" y="992" text-anchor="end">source: GitHub GraphQL + public events API</text>
 </svg>`;
