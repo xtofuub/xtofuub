@@ -15,7 +15,7 @@
 <path d="M42 38H1158" stroke="#343438"/>
 <circle cx="42" cy="61" r="4" fill="#f1f1ef"/>
 <text class="label" x="60" y="65">ACTIVITY / LIVE</text>
-<text class="sub" x="1158" y="65" text-anchor="end">2026-08-14 19:04 UTC</text>
+<text class="sub" x="1158" y="65" text-anchor="end">2026-08-14 23:29 UTC</text>
 <g transform="translate(42 92)">
     <rect width="210" height="150" rx="4" fill="#0f0f11" stroke="#2c2c30"/>
     <text class="label" x="18" y="29">REPOSITORIES</text>
@@ -435,40 +435,40 @@
 <text class="label" x="68" y="590">TOP LANGUAGES</text>
 <text class="sub" x="442" y="590" text-anchor="end">public repository bytes</text>
 <g>
-    <text class="body" x="68" y="632">Python</text>
-    <rect x="190" y="623" width="230" height="8" rx="4" fill="#242428"/>
-    <rect x="190" y="623" width="128.33999999999997" height="8" rx="4" fill="#d8d8d6"/>
-    <text class="sub" x="442" y="632" text-anchor="end">55.8%</text>
+    <text class="body" x="68" y="632" dominant-baseline="middle">Python</text>
+    <rect x="190" y="627" width="230" height="10" rx="5" fill="#242428"/>
+    <rect x="190" y="627" width="127.88000000000001" height="10" rx="5" fill="#d8d8d6"/>
+    <text class="sub" x="454" y="632" text-anchor="end" dominant-baseline="middle">55.6%</text>
   </g>
 <g>
-    <text class="body" x="68" y="668">TypeScript</text>
-    <rect x="190" y="659" width="230" height="8" rx="4" fill="#242428"/>
-    <rect x="190" y="659" width="57.96" height="8" rx="4" fill="#d8d8d6"/>
-    <text class="sub" x="442" y="668" text-anchor="end">25.2%</text>
+    <text class="body" x="68" y="668" dominant-baseline="middle">TypeScript</text>
+    <rect x="190" y="663" width="230" height="10" rx="5" fill="#242428"/>
+    <rect x="190" y="663" width="57.96" height="10" rx="5" fill="#d8d8d6"/>
+    <text class="sub" x="454" y="668" text-anchor="end" dominant-baseline="middle">25.2%</text>
   </g>
 <g>
-    <text class="body" x="68" y="704">JavaScript</text>
-    <rect x="190" y="695" width="230" height="8" rx="4" fill="#242428"/>
-    <rect x="190" y="695" width="28.290000000000003" height="8" rx="4" fill="#d8d8d6"/>
-    <text class="sub" x="442" y="704" text-anchor="end">12.3%</text>
+    <text class="body" x="68" y="704" dominant-baseline="middle">JavaScript</text>
+    <rect x="190" y="699" width="230" height="10" rx="5" fill="#242428"/>
+    <rect x="190" y="699" width="28.06" height="10" rx="5" fill="#d8d8d6"/>
+    <text class="sub" x="454" y="704" text-anchor="end" dominant-baseline="middle">12.2%</text>
   </g>
 <g>
-    <text class="body" x="68" y="740">Rust</text>
-    <rect x="190" y="731" width="230" height="8" rx="4" fill="#242428"/>
-    <rect x="190" y="731" width="5.0600000000000005" height="8" rx="4" fill="#d8d8d6"/>
-    <text class="sub" x="442" y="740" text-anchor="end">2.2%</text>
+    <text class="body" x="68" y="740" dominant-baseline="middle">Rust</text>
+    <rect x="190" y="735" width="230" height="10" rx="5" fill="#242428"/>
+    <rect x="190" y="735" width="5.75" height="10" rx="5" fill="#d8d8d6"/>
+    <text class="sub" x="454" y="740" text-anchor="end" dominant-baseline="middle">2.5%</text>
   </g>
 <g>
-    <text class="body" x="68" y="776">CSS</text>
-    <rect x="190" y="767" width="230" height="8" rx="4" fill="#242428"/>
-    <rect x="190" y="767" width="5.0600000000000005" height="8" rx="4" fill="#d8d8d6"/>
-    <text class="sub" x="442" y="776" text-anchor="end">2.2%</text>
+    <text class="body" x="68" y="776" dominant-baseline="middle">CSS</text>
+    <rect x="190" y="771" width="230" height="10" rx="5" fill="#242428"/>
+    <rect x="190" y="771" width="4.83" height="10" rx="5" fill="#d8d8d6"/>
+    <text class="sub" x="454" y="776" text-anchor="end" dominant-baseline="middle">2.1%</text>
   </g>
 <g>
-    <text class="body" x="68" y="812">HTML</text>
-    <rect x="190" y="803" width="230" height="8" rx="4" fill="#242428"/>
-    <rect x="190" y="803" width="1.84" height="8" rx="4" fill="#d8d8d6"/>
-    <text class="sub" x="442" y="812" text-anchor="end">0.8%</text>
+    <text class="body" x="68" y="812" dominant-baseline="middle">HTML</text>
+    <rect x="190" y="807" width="230" height="10" rx="5" fill="#242428"/>
+    <rect x="190" y="807" width="1.84" height="10" rx="5" fill="#d8d8d6"/>
+    <text class="sub" x="454" y="812" text-anchor="end" dominant-baseline="middle">0.8%</text>
   </g>
 
 <rect class="card" x="512" y="558" width="646" height="286" rx="4"/>
@@ -478,35 +478,35 @@
         <path d="M548 627V670" stroke="#303035"/>
         <text class="body" x="570" y="627">Pushed 1 commits to xtofuub/xtofuub</text>
         <text class="sub" x="570" y="646">Updated repository code</text>
-        <text class="sub" x="1125" y="627" text-anchor="end">9s ago</text>
+        <text class="sub" x="1125" y="627" text-anchor="end">7s ago</text>
       </g>
 <g>
         <circle cx="548" cy="670" r="4" fill="#0b0b0d" stroke="#bdbdc2"/>
         <path d="M548 674V717" stroke="#303035"/>
-        <text class="body" x="570" y="674">Pushed 1 commits to xtofuub/xtofuub</text>
+        <text class="body" x="570" y="674">Pushed 1 commits to xtofuub/Aletheia</text>
         <text class="sub" x="570" y="693">Updated repository code</text>
-        <text class="sub" x="1125" y="674" text-anchor="end">46s ago</text>
+        <text class="sub" x="1125" y="674" text-anchor="end">1h ago</text>
       </g>
 <g>
         <circle cx="548" cy="717" r="4" fill="#0b0b0d" stroke="#bdbdc2"/>
         <path d="M548 721V764" stroke="#303035"/>
-        <text class="body" x="570" y="721">Pushed 1 commits to xtofuub/xtofuub</text>
+        <text class="body" x="570" y="721">Pushed 1 commits to xtofuub/Aletheia</text>
         <text class="sub" x="570" y="740">Updated repository code</text>
-        <text class="sub" x="1125" y="721" text-anchor="end">1m ago</text>
+        <text class="sub" x="1125" y="721" text-anchor="end">2h ago</text>
       </g>
 <g>
         <circle cx="548" cy="764" r="4" fill="#0b0b0d" stroke="#bdbdc2"/>
         <path d="M548 768V811" stroke="#303035"/>
         <text class="body" x="570" y="768">Pushed 1 commits to xtofuub/Aletheia</text>
         <text class="sub" x="570" y="787">Updated repository code</text>
-        <text class="sub" x="1125" y="768" text-anchor="end">36m ago</text>
+        <text class="sub" x="1125" y="768" text-anchor="end">2h ago</text>
       </g>
 <g>
         <circle cx="548" cy="811" r="4" fill="#0b0b0d" stroke="#bdbdc2"/>
         
         <text class="body" x="570" y="815">Pushed 1 commits to xtofuub/Aletheia</text>
         <text class="sub" x="570" y="834">Updated repository code</text>
-        <text class="sub" x="1125" y="815" text-anchor="end">54m ago</text>
+        <text class="sub" x="1125" y="815" text-anchor="end">2h ago</text>
       </g>
 
 <path d="M42 856H1158" stroke="#2f2f33"/>
