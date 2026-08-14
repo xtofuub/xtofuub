@@ -1,17 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-labelledby="title desc">
-<title id="title">Profile footer</title>
-<desc id="desc">Minimal monochrome footer inviting collaboration and linking to more work.</desc>
-<rect width="290" height="170" fill="#0b0b0b"/>
-<rect x="290" width="910" height="170" fill="#f3f3f0"/>
-<path d="M24 0V144M24 144H31" stroke="#d0d0cc"/>
-<path d="M88 0H226V170H88Z" fill="#181818"/>
-<g stroke="#666" opacity=".45"><path d="M112 0V170M144 0V170M176 0V170M208 0V170"/><path d="M88 54H226M88 108H226"/></g>
-<g transform="translate(28 136) rotate(-90)" fill="#d0d0cc" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" letter-spacing="4"><text>MORE WORK</text></g>
-<rect x="340" y="28" width="808" height="114" rx="2" fill="#f8f8f5" stroke="#bdbdb8"/>
-<circle cx="390" cy="85" r="28" fill="none" stroke="#222"/><path d="M377 85H403M390 72V98" stroke="#222"/>
-<text x="438" y="72" fill="#111" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" letter-spacing="1.1">OPEN TO COLLABORATION</text>
-<text x="438" y="98" fill="#5f5f5b" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11">Always learning. Always building.</text>
-<path d="M874 54V116" stroke="#d0d0cb"/>
-<text x="910" y="72" fill="#777773" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10" letter-spacing="1">MORE PROJECTS</text>
-<text x="910" y="99" fill="#111" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">browse repositories  →</text>
+<title id="title">More repositories</title>
+<desc id="desc">Dark monochrome banner linking to more repositories.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#080809"/>
+    <stop offset="0.62" stop-color="#0b0b0d"/>
+    <stop offset="1" stop-color="#131316"/>
+  </linearGradient>
+  <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="23"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="table" tableValues="0 .055"/></feComponentTransfer>
+  </filter>
+</defs>
+<rect width="1200" height="170" rx="8" fill="url(#bg)"/>
+<rect width="1200" height="170" rx="8" filter="url(#grain)" opacity=".3"/>
+<rect x="1" y="1" width="1198" height="168" rx="7" fill="none" stroke="#303034"/>
+
+<!-- quiet architectural texture -->
+<path d="M820 170L933 62L1010 29L1200 99V170Z" fill="#161619"/>
+<path d="M933 62L1010 29L1200 99L1180 110L1010 52L950 76Z" fill="#2a2a2e" opacity=".72"/>
+<g stroke="#3b3b40" opacity=".34"><path d="M950 77V170"/><path d="M990 58V170"/><path d="M1030 59V170"/><path d="M1070 74V170"/><path d="M1110 88V170"/><path d="M1150 102V170"/><path d="M867 128H1200"/></g>
+
+<circle cx="66" cy="85" r="29" fill="none" stroke="#d7d7da"/>
+<path d="M53 85H79M66 72V98" stroke="#d7d7da"/>
+<text x="118" y="76" fill="#f1f1ef" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16" letter-spacing="1.8">MORE REPOSITORIES</text>
+<text x="118" y="103" fill="#8f8f95" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11">browse projects, tools, experiments and archived work</text>
+<path d="M690 85H780" stroke="#d7d7da"/>
+<path d="M770 76L780 85L770 94" fill="none" stroke="#d7d7da"/>
+<text x="1118" y="145" text-anchor="end" fill="#66666c" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9" letter-spacing="1.4">GITHUB / REPOSITORIES</text>
 </svg>
