@@ -251,14 +251,14 @@ const overviewMarkup = overview.map(([label, value, sub], i) => {
 }).join('\n');
 
 const languageMarkup = topLanguages.map((lang, i) => {
-  const y = 632 + i * 36;
+  const rowY = 632 + i * 36;
   const percent = Math.round(lang.percent * 10) / 10;
   const width = Math.max(0, Math.min(230, (percent / 100) * 230));
   return `<g>
-    <text class="body" x="68" y="${y}">${esc(lang.name)}</text>
-    <rect x="190" y="${y - 9}" width="230" height="8" rx="4" fill="#242428"/>
-    <rect x="190" y="${y - 9}" width="${width}" height="8" rx="4" fill="#d8d8d6"/>
-    <text class="sub" x="442" y="${y}" text-anchor="end">${percent}%</text>
+    <text class="body" x="68" y="${rowY}" dominant-baseline="middle">${esc(lang.name)}</text>
+    <rect x="190" y="${rowY - 5}" width="230" height="10" rx="5" fill="#242428"/>
+    <rect x="190" y="${rowY - 5}" width="${width}" height="10" rx="5" fill="#d8d8d6"/>
+    <text class="sub" x="454" y="${rowY}" text-anchor="end" dominant-baseline="middle">${percent}%</text>
   </g>`;
 }).join('\n');
 
