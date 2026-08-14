@@ -31,7 +31,7 @@
 <path d="M24 32V780M24 32H31M24 780H31" stroke="#e0e0dc"/>
 <circle cx="24" cy="132" r="4" fill="none" stroke="#e0e0dc"/><path d="M17 132H31M24 125V139" stroke="#e0e0dc" opacity=".8"/>
 <g transform="translate(30 765) rotate(-90)" class="mono" fill="#d8d8d4" font-size="10" letter-spacing="4"><text>ACTIVITY · SIGNAL · OUTPUT</text></g>
-<circle cx="340" cy="45" r="4" fill="#111"/><text class="label" x="360" y="50">02 — ACTIVITY / LIVE</text><text class="sub" x="1055" y="50">2026-08-13</text><path d="M340 70H1148" stroke="#8f8f8b"/>
+<circle cx="340" cy="45" r="4" fill="#111"/><text class="label" x="360" y="50">02 — ACTIVITY / LIVE</text><text class="sub" x="1055" y="50">2026-08-14</text><path d="M340 70H1148" stroke="#8f8f8b"/>
 <text class="mid" x="340" y="122">ACTIVITY</text>
 
 <rect class="card" x="340" y="145" width="808" height="140" rx="2"/>
@@ -406,6 +406,7 @@
 <rect x="865" y="440" width="7" height="7" rx="1" fill="#deded9"/>
 <rect x="865" y="450" width="7" height="7" rx="1" fill="#bdbdb8"/>
 <rect x="865" y="460" width="7" height="7" rx="1" fill="#bdbdb8"/>
+<rect x="865" y="470" width="7" height="7" rx="1" fill="#deded9"/>
 <g class="sub"><text x="365" y="520">LESS</text><rect x="400" y="512" width="8" height="8" rx="1" fill="#deded9"/><rect x="412" y="512" width="8" height="8" rx="1" fill="#bdbdb8"/><rect x="424" y="512" width="8" height="8" rx="1" fill="#8b8b86"/><rect x="436" y="512" width="8" height="8" rx="1" fill="#575754"/><rect x="448" y="512" width="8" height="8" rx="1" fill="#111"/><text x="465" y="520">MORE</text></g>
 
 <rect class="card" x="910" y="310" width="238" height="250" rx="2"/>
@@ -422,9 +423,9 @@
 
 <rect class="card" x="755" y="585" width="393" height="195" rx="2"/>
 <text class="label" x="780" y="615">12M SIGNAL</text>
-<g><text class="sub" x="780" y="652">ACTIVE DAYS</text><text class="big" x="780" y="687">93</text></g>
-<g><text class="sub" x="950" y="652">AVG / ACTIVE DAY</text><text class="big" x="950" y="687">11.3</text></g>
+<g><text class="sub" x="780" y="652">ACTIVE DAYS</text><text class="big" x="780" y="687">92</text></g>
+<g><text class="sub" x="950" y="652">AVG / ACTIVE DAY</text><text class="big" x="950" y="687">11.4</text></g>
 <path d="M780 712H1123" stroke="#d0d0cb"/>
 <text class="sub" x="780" y="742">ISSUES / 12M</text><text class="body" x="880" y="742">2</text><text class="sub" x="950" y="742">TOP LANGUAGE</text><text class="body" x="1123" y="742" text-anchor="end">Python</text>
-<text class="sub" x="340" y="808">source: GitHub GraphQL · generated 2026-08-13</text>
+<text class="sub" x="340" y="808">source: GitHub GraphQL · generated 2026-08-14</text>
 </svg>
