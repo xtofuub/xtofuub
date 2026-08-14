@@ -14,17 +14,23 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-stats
+  cancel-in-progress: true
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Generate live SVG
         run: node scripts/generate-profile-stats.mjs
@@ -43,4 +49,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/profile-stats.svg
           git commit -m "chore: update profile stats"
-          git push
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
