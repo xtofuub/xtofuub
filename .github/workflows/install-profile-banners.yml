@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'assets/profile-header.png.b64'
-      - 'assets/profile-footer.png.b64'
+      - 'assets/banner-src/**'
+      - '.github/workflows/install-profile-banners.yml'
   workflow_dispatch:
 
 permissions:
@@ -22,11 +22,28 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Decode PNG banners
+
+      - name: Rebuild banner source images
         run: |
-          base64 --decode assets/profile-header.png.b64 > assets/profile-header.png
-          base64 --decode assets/profile-footer.png.b64 > assets/profile-footer.png
+          cat assets/banner-src/header.*.b64 | base64 --decode > /tmp/profile-header.jpg
+          cat assets/banner-src/footer.*.b64 | base64 --decode > /tmp/profile-footer.jpg
+          file /tmp/profile-header.jpg /tmp/profile-footer.jpg
+
+      - name: Convert banners to PNG
+        run: |
+          python3 -m pip install --quiet pillow
+          python3 - <<'PY'
+          from PIL import Image
+
+          Image.open('/tmp/profile-header.jpg').convert('RGB').save(
+              'assets/profile-header.png', optimize=True
+          )
+          Image.open('/tmp/profile-footer.jpg').convert('RGB').save(
+              'assets/profile-footer.png', optimize=True
+          )
+          PY
           file assets/profile-header.png assets/profile-footer.png
+
       - name: Commit PNG banners
         run: |
           git config user.name "github-actions[bot]"
