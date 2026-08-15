@@ -1,0 +1,62 @@
+name: finalize profile banners
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/finalize-profile-banners.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: finalize-profile-banners
+  cancel-in-progress: true
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Rebuild exact selected PNGs
+        run: |
+          cat assets/banner-v2-src/header.*.b64 | base64 --decode > assets/profile-header.png
+          cat assets/banner-v2-src/footer.*.b64 | base64 --decode > assets/profile-footer.png
+          test "$(stat -c%s assets/profile-header.png)" -eq 39302
+          test "$(stat -c%s assets/profile-footer.png)" -eq 23721
+
+      - name: Validate image files
+        run: |
+          python3 -m pip install --quiet pillow
+          python3 - <<'PY'
+          from PIL import Image
+          expected = {
+              'assets/profile-header.png': (900, 386),
+              'assets/profile-footer.png': (900, 386),
+          }
+          for path, size in expected.items():
+              with Image.open(path) as im:
+                  if im.format != 'PNG':
+                      raise SystemExit(f'{path}: expected PNG, got {im.format}')
+                  if im.size != size:
+                      raise SystemExit(f'{path}: expected {size}, got {im.size}')
+                  im.verify()
+          PY
+
+      - name: Commit banners and clean staging
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -rf assets/banner-v2-src assets/banner-src assets/banner-final-src
+          rm -f .github/workflows/install-profile-banners.yml
+          rm -f .github/workflows/install-final-profile-banners.yml
+          rm -f .github/workflows/finalize-profile-banners.yml
+          git add -A assets .github/workflows
+          git commit -m "design: finalize selected PNG profile banners"
+          git pull --rebase origin main
+          git push origin HEAD:main
