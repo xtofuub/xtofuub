@@ -1,0 +1,97 @@
+name: install v4 profile banners
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/install-v4-banners.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: install-v4-profile-banners
+  cancel-in-progress: false
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Rebuild and verify source banners
+        shell: bash
+        run: |
+          set -euo pipefail
+          command -v ffmpeg
+          command -v ffprobe
+
+          cat assets/banner-v4-src/header.*.b64 | base64 --decode > /tmp/profile-header.webp
+          cat assets/banner-v4-src/footer.*.b64 | base64 --decode > /tmp/profile-footer.webp
+
+          test "$(stat -c%s /tmp/profile-header.webp)" -gt 60000
+          test "$(stat -c%s /tmp/profile-footer.webp)" -gt 30000
+
+          test "$(head -c4 /tmp/profile-header.webp)" = 'RIFF'
+          test "$(head -c4 /tmp/profile-footer.webp)" = 'RIFF'
+
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 /tmp/profile-header.webp | grep -qx '1200x514'
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 /tmp/profile-footer.webp | grep -qx '1200x514'
+
+          ffmpeg -v error -i /tmp/profile-header.webp -f null -
+          ffmpeg -v error -i /tmp/profile-footer.webp -f null -
+
+      - name: Convert high quality banners to PNG
+        shell: bash
+        run: |
+          set -euo pipefail
+          ffmpeg -v error -y -i /tmp/profile-header.webp -frames:v 1 assets/profile-header-v4.png
+          ffmpeg -v error -y -i /tmp/profile-footer.webp -frames:v 1 assets/profile-footer-v4.png
+
+          file assets/profile-header-v4.png assets/profile-footer-v4.png
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 assets/profile-header-v4.png | grep -qx '1200x514'
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 assets/profile-footer-v4.png | grep -qx '1200x514'
+          test "$(stat -c%s assets/profile-header-v4.png)" -gt 100000
+          test "$(stat -c%s assets/profile-footer-v4.png)" -gt 100000
+
+      - name: Update README and clean temporary assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('README.md')
+          s = p.read_text()
+          for old in ('./assets/profile-header-v2.png', './assets/profile-header.png'):
+              s = s.replace(old, './assets/profile-header-v4.png')
+          for old in ('./assets/profile-footer-v2.png', './assets/profile-footer.png'):
+              s = s.replace(old, './assets/profile-footer-v4.png')
+          p.write_text(s)
+          PY
+
+          grep -q './assets/profile-header-v4.png' README.md
+          grep -q './assets/profile-footer-v4.png' README.md
+          grep -q './assets/profile-stats.svg' README.md
+
+          rm -rf assets/banner-v4-src assets/banner-v3-src assets/banner-v2-src assets/banner-fix-src
+          rm -f assets/profile-header.png assets/profile-footer.png
+          rm -f assets/profile-header-v2.png assets/profile-footer-v2.png
+          rm -f .github/workflows/install-selected-banners.yml
+          rm -f .github/workflows/install-v4-banners.yml
+
+      - name: Commit verified banners
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "design: install high quality profile banners"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
