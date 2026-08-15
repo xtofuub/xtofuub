@@ -26,8 +26,8 @@ jobs:
 
       - name: Rebuild banner source images
         run: |
-          cat assets/banner-src/header.*.b64 | base64 --decode > /tmp/profile-header.jpg
-          cat assets/banner-src/footer.*.b64 | base64 --decode > /tmp/profile-footer.jpg
+          cat assets/banner-src/header.*.b64 | tr -cd 'A-Za-z0-9+/=' | base64 --decode > /tmp/profile-header.jpg
+          cat assets/banner-src/footer.*.b64 | tr -cd 'A-Za-z0-9+/=' | base64 --decode > /tmp/profile-footer.jpg
           test "$(stat -c%s /tmp/profile-header.jpg)" -gt 20000
           test "$(stat -c%s /tmp/profile-footer.jpg)" -gt 15000
           file /tmp/profile-header.jpg /tmp/profile-footer.jpg
