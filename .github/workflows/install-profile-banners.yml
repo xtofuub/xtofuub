@@ -21,12 +21,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Rebuild banner source images
         run: |
           cat assets/banner-src/header.*.b64 | base64 --decode > /tmp/profile-header.jpg
           cat assets/banner-src/footer.*.b64 | base64 --decode > /tmp/profile-footer.jpg
+          test "$(stat -c%s /tmp/profile-header.jpg)" -gt 20000
+          test "$(stat -c%s /tmp/profile-footer.jpg)" -gt 15000
           file /tmp/profile-header.jpg /tmp/profile-footer.jpg
 
       - name: Convert banners to PNG
@@ -35,12 +38,14 @@ jobs:
           python3 - <<'PY'
           from PIL import Image
 
-          Image.open('/tmp/profile-header.jpg').convert('RGB').save(
-              'assets/profile-header.png', optimize=True
-          )
-          Image.open('/tmp/profile-footer.jpg').convert('RGB').save(
-              'assets/profile-footer.png', optimize=True
-          )
+          for src, dst in [
+              ('/tmp/profile-header.jpg', 'assets/profile-header.png'),
+              ('/tmp/profile-footer.jpg', 'assets/profile-footer.png'),
+          ]:
+              image = Image.open(src).convert('RGB')
+              if image.size != (900, 386):
+                  raise SystemExit(f'unexpected banner size for {src}: {image.size}')
+              image.save(dst, optimize=True)
           PY
           file assets/profile-header.png assets/profile-footer.png
 
