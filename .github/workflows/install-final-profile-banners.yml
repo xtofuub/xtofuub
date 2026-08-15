@@ -1,0 +1,59 @@
+name: install final profile banners
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/banner-v2-src/**'
+      - '.github/workflows/install-final-profile-banners.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: install-final-profile-banners
+  cancel-in-progress: true
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Rebuild exact PNG banners
+        run: |
+          cat assets/banner-v2-src/header.*.b64 | base64 --decode > assets/profile-header.png
+          cat assets/banner-v2-src/footer.*.b64 | base64 --decode > assets/profile-footer.png
+          test "$(stat -c%s assets/profile-header.png)" -eq 39302
+          test "$(stat -c%s assets/profile-footer.png)" -eq 23721
+
+      - name: Validate PNG dimensions
+        run: |
+          python3 -m pip install --quiet pillow
+          python3 - <<'PY'
+          from PIL import Image
+          for path in ['assets/profile-header.png', 'assets/profile-footer.png']:
+              im = Image.open(path)
+              if im.format != 'PNG':
+                  raise SystemExit(f'{path}: expected PNG, got {im.format}')
+              if im.size != (900, 386):
+                  raise SystemExit(f'{path}: expected 900x386, got {im.size}')
+              im.verify()
+          PY
+
+      - name: Commit final PNG banners
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile-header.png assets/profile-footer.png
+          if git diff --cached --quiet; then
+            echo "PNG banners already exact"
+            exit 0
+          fi
+          git commit -m "design: install exact selected PNG profile banners"
+          git pull --rebase origin main
+          git push origin HEAD:main
