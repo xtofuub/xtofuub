@@ -216,10 +216,10 @@ const lastWeeks = calendar.weeks.slice(-52);
 const maxCount = Math.max(1, ...lastWeeks.flatMap((week) => week.contributionDays.map((day) => day.contributionCount)));
 const levels = ['#171719', '#29292d', '#505056', '#8a8a91', '#f1f1ef'];
 const cells = [];
-const cell = 10;
-const gap = 4;
+const cell = 15;
+const gap = 5;
 const originX = 86;
-const originY = 362;
+const originY = 346;
 
 lastWeeks.forEach((week, x) => {
   week.contributionDays.forEach((day, y) => {
@@ -319,18 +319,18 @@ ${overviewMarkup}
 <rect class="card" x="42" y="265" width="1116" height="270" rx="4"/>
 <text class="label" x="66" y="298">CONTRIBUTIONS / LAST 52 WEEKS</text>
 <text class="sub" x="66" y="319">${compact(totalContributions)} contributions in the last 12 months</text>
-<text class="sub" x="54" y="377">MON</text>
-<text class="sub" x="54" y="405">WED</text>
-<text class="sub" x="54" y="433">FRI</text>
+<text class="sub" x="54" y="382">MON</text>
+<text class="sub" x="54" y="422">WED</text>
+<text class="sub" x="54" y="462">FRI</text>
 ${cells.join('\n')}
 <g class="sub">
-  <text x="860" y="486">LESS</text>
-  <rect x="900" y="478" width="10" height="10" rx="1" fill="#171719"/>
-  <rect x="916" y="478" width="10" height="10" rx="1" fill="#29292d"/>
-  <rect x="932" y="478" width="10" height="10" rx="1" fill="#505056"/>
-  <rect x="948" y="478" width="10" height="10" rx="1" fill="#8a8a91"/>
-  <rect x="964" y="478" width="10" height="10" rx="1" fill="#f1f1ef"/>
-  <text x="982" y="486">MORE</text>
+  <text x="928" y="514">LESS</text>
+  <rect x="968" y="504" width="12" height="12" rx="1.5" fill="#171719"/>
+  <rect x="986" y="504" width="12" height="12" rx="1.5" fill="#29292d"/>
+  <rect x="1004" y="504" width="12" height="12" rx="1.5" fill="#505056"/>
+  <rect x="1022" y="504" width="12" height="12" rx="1.5" fill="#8a8a91"/>
+  <rect x="1040" y="504" width="12" height="12" rx="1.5" fill="#f1f1ef"/>
+  <text x="1060" y="514">MORE</text>
 </g>
 
 <rect class="card" x="42" y="558" width="448" height="286" rx="4"/>

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-header-v2.png" width="100%" alt="About — building useful tools across software, systems, and security" />
+  <img src="./assets/profile-header-original.png" width="100%" alt="About — building useful tools across software, systems, and security" />
 </p>
 
 <p align="center">
@@ -8,6 +8,6 @@
 
 <p align="center">
   <a href="https://github.com/xtofuub?tab=repositories">
-    <img src="./assets/profile-footer-v2.png" width="100%" alt="More repositories — browse projects, experiments, and archived work" />
+    <img src="./assets/profile-footer-original.png" width="100%" alt="More repositories — browse projects, experiments, and archived work" />
   </a>
 </p>
