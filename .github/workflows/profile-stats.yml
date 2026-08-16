@@ -1,6 +1,6 @@
 name: update profile stats
 
-# Static PNG banners are independent from the live stats generator.
+# Static original PNG banners are independent from the live stats generator.
 on:
   workflow_dispatch:
   schedule:
